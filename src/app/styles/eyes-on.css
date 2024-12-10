@@ -117,7 +117,7 @@
     transform: rotate(0) translateX(0) translateY(20rem) scale(1);
   }
   50% {
-    transform: rotate(180deg) translateX(2rem) translateY(0rem) scale(5);
+    transform: rotate(180deg) translateX(2rem) translateY(0rem) scale(2);
   }
   100% {
     transform: rotate(360deg) translateX(0) translateY(20rem) scale(1);
