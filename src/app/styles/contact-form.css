@@ -2,13 +2,16 @@
   width: 55rem;
   height: 28.4rem;
   border-radius: 1.5rem;
-  background-color: #00000c;
+  background-color: rgba(112, 249, 224, 0.039);
+  backdrop-filter: blur(16.950000762939453px);
   border: 0.5px solid #f1edba;
   padding: 2rem 4rem;
   position: relative;
 }
 .contact-form-section {
   margin-bottom: 14.4rem;
+  position: relative;
+  /* overflow-y: hidden; */
 }
 .contact-form-section h1 {
   font-size: 3.5rem;
@@ -103,7 +106,7 @@
   margin-top: 1rem;
 }
 
-.ellipse161 {
+/* .ellipse161 {
   position: absolute;
   left: 4rem;
   top: -25rem;
@@ -116,6 +119,57 @@
   top: -10rem;
   width: 100%;
   transform: scale(1.4);
+} */
+
+.contact-backlight-left-1 {
+  position: absolute;
+  left: -15rem;
+  top: -4rem;
+  filter: blur(113px);
+  transform: rotate(-90.907deg);
+  width: 32.75425rem;
+  height: 33.97675rem;
+}
+.contact-backlight-right-1 {
+  position: absolute;
+  right: -16rem;
+  top: -2rem;
+  fill: linear-gradient(
+    180deg,
+    rgba(70, 183, 162, 0.35) 24%,
+    rgba(83, 162, 255, 0) 127.3%
+  );
+  filter: blur(3px);
+  width: 67.94563rem;
+  height: 67.45419rem;
+  fill: #71c3d033;
+  opacity: 0.8;
+}
+.contact-backlight-right-2 {
+  position: absolute;
+  right: -10rem;
+  top: 5rem;
+  filter: blur(48px);
+  width: 40.94563rem;
+  height: 40.45419rem;
+  fill: #71c3d033;
+}
+.contact-backlight-right-3 {
+  position: absolute;
+  right: -11.5rem;
+  top: 18rem;
+  width: 30rem;
+  height: 39rem;
+  fill: rgba(113, 195, 208, 0.2);
+  filter: blur(113px);
+}
+.contact-backlight-right-4 {
+  position: absolute;
+  right: -25rem;
+  top: -3rem;
+  width: 41.62119rem;
+  height: 38.48844rem;
+  filter: blur(100px);
 }
 
 @media (max-width: 1300px) {
@@ -127,7 +181,8 @@
     width: 33rem;
     height: auto;
     border-radius: 1rem;
-    background-color: #00000c;
+    background-color: rgba(112, 249, 224, 0.039);
+    backdrop-filter: blur(16.950000762939453px);
     border: 0.5px solid #f1edba;
     padding: 2rem 4rem;
     position: relative;

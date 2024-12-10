@@ -7,8 +7,8 @@ const KeyProject = () => {
       <div className="key-projects-heading">
         <h1 className="key-projects-h1">Key Projects & Case Studies</h1>
         <h1 className="key-projects-h2">Case Studies</h1>
-        <img src="./ellipse158.svg" className="ellipse-158 light" />
-        <img src="./ellipse158.svg" className="ellipse-159 light" />
+        {/* <img src="./ellipse158.svg" className="ellipse-158 light" />
+        <img src="./ellipse158.svg" className="ellipse-159 light" /> */}
         <ViewMoreBtn text="View More" />
       </div>
       <div className="key-projects-project-mobile">

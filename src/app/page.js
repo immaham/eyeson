@@ -16,8 +16,8 @@ export default function Home() {
     <div className="body-container">
       <MouseLight />
       <main className="main">
-        <img src="../ellipse2.svg" className="ellipse2 light" />
-        <img src="../ellipse4.svg" className="ellipse5 light" />
+        {/* <img src="../ellipse2.svg" className="ellipse2 light" />
+        <img src="../ellipse4.svg" className="ellipse5 light" /> */}
         <secion>
           <section className="hero-section">
             <HeroSectionNav />

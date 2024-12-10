@@ -9,10 +9,10 @@ const EyesOn = () => {
       </div>
       <img src="./eyes-on1.png" className="davaran" />
       <img src="./eyes-on2.png" />
-      <img src="./eyes-on3.png" />
+      {/* <img src="./eyes-on3.png" />
       <img src="./eyes-on4.png" />
       <img src="./eyes-on5.png" />
-      <img src="./eyes-on5.png" />
+      <img src="./eyes-on5.png" /> */}
     </section>
   );
 };

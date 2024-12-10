@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <section className="services">
       <div className="services-info">
-        <img src="./ellipse1228.svg" className="services-light light" />
+        {/* <img src="./ellipse1228.svg" className="services-light light" /> */}
         <img src="./logo-svg.svg" className="services-eye-logo" />
         <h1>Services</h1>
         <p>

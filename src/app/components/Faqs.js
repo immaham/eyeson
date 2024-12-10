@@ -33,11 +33,11 @@ const Faqs = () => {
 
   return (
     <section className="faqs">
-      <img src="./ellipse1234.svg" className="ellipse1234 light" />
-      <img src="./e1.svg" className="e1 light" />
+      {/* <img src="./ellipse1234.svg" className="ellipse1234 light" /> */}
+      {/* <img src="./e1.svg" className="e1 light" />
       <img src="./e2.svg" className="e2 light" />
       <img src="./e3.svg" className="e3 light" />
-      <img src="./e4.svg" className="e4 light" />
+      <img src="./e4.svg" className="e4 light" /> */}
       <div className="faqs-left">
         <h1>FAQs</h1>
         <p>
