@@ -1,0 +1,30 @@
+.light {
+  align-self: baseline;
+  position: fixed;
+  width: 300px; /* Adjust size for the effect */
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(144, 255, 253, 0.227) 10%,
+    /* Bright color with partial opacity near the center */
+      rgba(144, 255, 253, 0.193) 30%,
+    /* Softer edges */ rgba(144, 255, 253, 0.1) 60%,
+    /* Very faint outer edges */ rgba(144, 255, 253, 0) 100%
+      /* Fully transparent */
+  );
+  pointer-events: none; /* Prevents blocking interactions */
+  border-radius: 50%; /* Makes the gradient circular */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centers the gradient around its position */
+  z-index: 1000; /* Ensures it stays on top of content */
+  filter: blur(120px);
+  transition: transform 0.05s linear;
+}
+
+@media (max-width: 680px) {
+  .light {
+    display: none;
+  }
+}

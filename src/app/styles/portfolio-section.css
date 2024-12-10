@@ -1,0 +1,117 @@
+.portfolio {
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.portfolio-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio-heading h1 {
+  font-size: 3.05rem;
+  font-weight: 600;
+}
+.portfolio-heading img {
+  height: 2.25rem;
+  width: 2.25rem;
+  border-radius: 50%;
+  background-color: #002c3f;
+  border: 0.786px solid #f1edba;
+  padding: 0.2rem;
+  margin-left: 0.9rem;
+}
+.portfolio-heading img:nth-of-type(1) {
+  transform: rotate(180deg);
+}
+.portfolio-cards {
+  display: flex;
+  gap: 3.25rem;
+  justify-content: center;
+}
+.portfolio-card-container {
+  width: 22.3125rem;
+  height: 24.6875rem;
+  position: relative;
+}
+
+.portfolio-card-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+.portfolio-card-description {
+  /* background-color: #05393024; */
+  position: absolute;
+  left: -1rem;
+  bottom: 0.75rem;
+  width: 24.0625rem;
+  height: 7.875rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(104, 246, 226, 0);
+  background-color: rgba(5, 57, 48, 0.323);
+  backdrop-filter: blur(20.449999809265137px);
+  padding: 1.38rem 1.25rem 1.5rem;
+}
+.portfolio-card-description h1 {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #f1edba;
+}
+.portfolio-card-description p {
+  width: 21.1875rem;
+  height: 3rem;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1300px) {
+  .portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.25rem;
+    justify-content: center;
+  }
+  .portfolio-heading h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+@media (max-width: 680px) {
+  .portfolio-heading h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .portfolio-heading {
+    gap: 10rem;
+    justify-content: center;
+  }
+
+  .portfolio-card-container {
+    width: 18.9rem;
+    height: 20.9rem;
+  }
+
+  .portfolio-card-description {
+    width: 20.4rem;
+    height: 6.7rem;
+    padding: 1.13rem 1.23rem 1.13rem;
+  }
+  .portfolio-card-description h1 {
+    margin-bottom: 0.9rem;
+  }
+  .portfolio-card-description p {
+    width: 17.98rem;
+    font-size: 1rem;
+  }
+  .portfolio-card-container:nth-of-type(2) {
+    display: none;
+  }
+  .portfolio-card-container:nth-of-type(3) {
+    display: none;
+  }
+}

@@ -1,0 +1,197 @@
+.eyes-on {
+  padding: 10rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: rgba(223, 193, 72, 0.104) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(249, 219, 99, 0.32) 0px 8px 4px,
+    rgba(249, 224, 125, 0.32) 0px 16px 8px,
+    rgba(255, 255, 255, 0.09) 0px 32px 16px;
+  margin-bottom: 10rem;
+}
+.eyes-on-text-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.eyes-on h1:nth-of-type(1) {
+  font-size: 3.5rem;
+  color: rgba(223, 193, 72, 0.32);
+  background: linear-gradient(
+    90deg,
+    rgba(223, 193, 72, 0.32),
+    rgba(223, 193, 72, 0.32),
+    #90fffd58
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 600;
+  /* line-height: 161.63%; 5.65706rem */
+  letter-spacing: 1.19rem;
+  transition: 0.4s linear;
+}
+.eyes-on h1:nth-of-type(2) {
+  font-size: 3.5rem;
+  color: rgba(223, 193, 72, 0.32);
+  background: linear-gradient(
+    90deg,
+    #90fffd58,
+    rgba(223, 193, 72, 0.32),
+    rgba(223, 193, 72, 0.32)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 600;
+  line-height: 161.63%; /* 5.65706rem */
+  letter-spacing: 1.19rem;
+  transition: 0.4s linear;
+}
+.eyes-on img:nth-of-type(1) {
+  position: absolute;
+  right: 8.5%;
+  top: -18%;
+  width: 100rem;
+  filter: blur(250px);
+  animation: davaran 10s linear infinite;
+  transition: 0.4s linear;
+}
+
+.eyes-on img:nth-of-type(2) {
+  position: absolute;
+  right: 13.5%;
+  top: 0;
+  z-index: 100;
+  transition: 0.3s linear;
+}
+
+.eyes-on:hover img:nth-of-type(2),
+.eyes-on:hover h1 {
+  transform: scale(0.7);
+}
+
+.eyes-on img:nth-of-type(3) {
+  position: absolute;
+  right: 40%;
+  top: -12%;
+  animation: davaran 8s linear infinite;
+  z-index: -10;
+  transition: 0.4s linear;
+}
+.eyes-on img:nth-of-type(4) {
+  position: absolute;
+  right: -25%;
+  top: -12%;
+  animation: davaran 7s linear infinite;
+  z-index: -10;
+  transition: 0.4s linear;
+}
+.eyes-on img:nth-of-type(5) {
+  position: absolute;
+  right: -5%;
+  top: -10%;
+  width: 21.3945rem;
+  height: 28.0075rem;
+  transform: rotate(-90.907deg);
+  filter: blur(60px);
+  animation: davaran 9s linear infinite;
+  z-index: -10;
+  transition: 0.4s linear;
+}
+.eyes-on img:nth-of-type(6) {
+  position: absolute;
+  left: -5%;
+  top: -10%;
+  width: 21.3945rem;
+  height: 28.0075rem;
+  transform: rotate(-90.907deg);
+  filter: blur(60px);
+  animation: davaran 7s linear 0.1s infinite;
+  z-index: -10;
+  transition: 0.4s linear;
+}
+@keyframes davaran {
+  0% {
+    transform: rotate(0) translateX(0) translateY(20rem) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) translateX(2rem) translateY(0rem) scale(5);
+  }
+  100% {
+    transform: rotate(360deg) translateX(0) translateY(20rem) scale(1);
+  }
+}
+
+.eyes-on:hover img {
+  animation: none;
+  transition: 0.4s linear;
+}
+
+@media (max-width: 1300px) {
+  .eyes-on h1:nth-of-type(1) {
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+  }
+  .eyes-on h1:nth-of-type(2) {
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+  }
+  .eyes-on img:nth-of-type(2) {
+    position: absolute;
+    right: 5.6rem;
+    top: -1.5rem;
+    z-index: 100;
+    width: 70%;
+    transition: 0.3s linear;
+  }
+  .eyes-on {
+    padding: 3rem 1rem;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: rgba(223, 193, 72, 0.104) 0px 1px 1px,
+      rgba(0, 0, 0, 0.09) 0px 2px 2px, rgba(249, 219, 99, 0.32) 0px 4px 4px,
+      rgba(249, 224, 125, 0.32) 0px 8px 8px,
+      rgba(255, 255, 255, 0.09) 0px 16px 16px;
+    margin-bottom: 10rem;
+  }
+}
+@media (max-width: 680px) {
+  .eyes-on {
+    width: 18rem;
+    margin: 0 auto;
+  }
+  .eyes-on h1:nth-of-type(1) {
+    font-size: 0.8rem;
+    letter-spacing: 0.25rem;
+  }
+  .eyes-on h1:nth-of-type(2) {
+    font-size: 0.8rem;
+    letter-spacing: 0.25rem;
+  }
+  .eyes-on img:nth-of-type(2) {
+    position: absolute;
+    right: 3.8rem;
+    top: 0.1rem;
+    z-index: 100;
+    width: 60%;
+    transition: 0.3s linear;
+  }
+  .eyes-on {
+    padding: 2rem 0.5rem;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: rgba(223, 193, 72, 0.104) 0px 1px 1px,
+      rgba(0, 0, 0, 0.09) 0px 2px 2px, rgba(249, 219, 99, 0.32) 0px 4px 4px,
+      rgba(249, 224, 125, 0.32) 0px 8px 8px,
+      rgba(255, 255, 255, 0.09) 0px 16px 16px;
+    margin-bottom: 6rem;
+  }
+}
