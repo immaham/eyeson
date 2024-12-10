@@ -19,6 +19,16 @@ const Faqs = () => {
       content:
         "SEO is best described as Search Engine Optimization; it's the process of optimizing your website to rank higher in the search engine result pages, which will make the website more visible for prospective customers. That is important because with increased visibility comes increased traffic, which may further lead to more conversions and business growth.",
     },
+    {
+      header: "1) What is SEO, and why is it important?",
+      content:
+        "SEO is best described as Search Engine Optimization; it's the process of optimizing your website to rank higher in the search engine result pages, which will make the website more visible for prospective customers. That is important because with increased visibility comes increased traffic, which may further lead to more conversions and business growth.",
+    },
+    {
+      header: "1) What is SEO, and why is it important?",
+      content:
+        "SEO is best described as Search Engine Optimization; it's the process of optimizing your website to rank higher in the search engine result pages, which will make the website more visible for prospective customers. That is important because with increased visibility comes increased traffic, which may further lead to more conversions and business growth.",
+    },
   ];
   const [openIndexes, setOpenIndexes] = useState([]);
 
@@ -33,6 +43,27 @@ const Faqs = () => {
 
   return (
     <section className="faqs">
+      <img src="./faqs-light-left-1.svg" className="faqs-light-left-1 light" />
+      <img
+        src="./faqs-light-right-1.svg"
+        className="faqs-light-right-1 light"
+      />
+      <img
+        src="./faqs-light-right-2.svg"
+        className="faqs-light-right-2 light"
+      />
+      <img
+        src="./faqs-light-right-3.svg"
+        className="faqs-light-right-3 light"
+      />
+      <img
+        src="./faqs-light-right-4.svg"
+        className="faqs-light-right-4 light"
+      />
+      <img
+        src="./faqs-light-right-5.svg"
+        className="faqs-light-right-5 light"
+      />
       {/* <img src="./ellipse1234.svg" className="ellipse1234 light" /> */}
       {/* <img src="./e1.svg" className="e1 light" />
       <img src="./e2.svg" className="e2 light" />

@@ -108,49 +108,56 @@
   animation: close2 0.5s linear forwards;
 }
 
-.ellipse1234 {
+.faqs-light-left-1,
+.faqs-light-right-1,
+.faqs-light-right-2,
+.faqs-light-right-3,
+.faqs-light-right-4,
+.faqs-light-right-5 {
   position: absolute;
-  left: -5rem;
-  top: -15rem;
-  border-radius: 50%;
-  transform: scaleX(1.5);
-  filter: blur(40px);
 }
-.e1 {
-  position: absolute;
-  right: -8rem;
-  top: -24rem;
-  border-radius: 50%;
-  transform: scaleX(3);
-  filter: blur(10px);
-  z-index: -5;
+
+.faqs-light-left-1 {
+  left: -8rem;
+  top: -1.5rem;
+  height: 20rem;
+  filter: blur(113px);
+  opacity: 0.86;
 }
-.e2 {
-  position: absolute;
-  right: 5rem;
-  top: -14rem;
-  border-radius: 50%;
-  transform: scaleY(0.6);
-  filter: blur(10px);
-  z-index: -5;
+.faqs-light-right-1 {
+  right: -6rem;
+  top: 14.5rem;
+  width: 36rem;
+  filter: blur(113px);
+  opacity: 0.56;
 }
-.e3 {
-  position: absolute;
-  right: 10rem;
-  top: 1rem;
-  border-radius: 50%;
-  transform: scaleX(1);
-  filter: blur(10px);
-  z-index: -5;
+.faqs-light-right-2 {
+  right: -1rem;
+  top: -3rem;
+  width: 48rem;
+  filter: blur(113px);
+  opacity: 0.56;
 }
-.e4 {
-  position: absolute;
-  right: -17rem;
-  top: 4rem;
-  border-radius: 50%;
-  transform: scale(0.7);
-  filter: blur(20px);
-  z-index: -5;
+.faqs-light-right-3 {
+  right: 20rem;
+  bottom: -7rem;
+  width: 36rem;
+  filter: blur(113px);
+  opacity: 0.56;
+}
+.faqs-light-right-4 {
+  right: 23rem;
+  bottom: 5rem;
+  width: 34rem;
+  filter: blur(113px);
+  opacity: 0.56;
+}
+.faqs-light-right-5 {
+  left: 23rem;
+  top: -2rem;
+  height: 16rem;
+  filter: blur(113px);
+  opacity: 0.8;
 }
 
 @media (max-width: 1300px) {
