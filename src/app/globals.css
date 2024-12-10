@@ -393,9 +393,9 @@ h1 {
 }
 
 @media (max-width: 680px) {
-  /* .light {
+  .light {
     display: none;
-  } */
+  }
   .main {
     max-width: 30rem;
   }
