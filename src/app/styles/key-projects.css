@@ -269,8 +269,9 @@
     height: 45rem;
   }
   .key-projects-heading h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-left: 2rem;
+    font-weight: 600;
   }
 
   .key-projects-project-mobile {
