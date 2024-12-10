@@ -122,6 +122,30 @@
     font-size: 2rem;
   }
 }
+.services-light-left,
+.services-light-right-1,
+.services-light-right-2 {
+  position: absolute;
+}
+.services-light-left {
+  left: -20rem;
+  top: -18rem;
+  height: 33rem;
+  width: 28rem;
+  filter: blur(113px);
+}
+.services-light-right-1 {
+  right: -45rem;
+  top: 2rem;
+  width: 38rem;
+  filter: blur(113px);
+}
+.services-light-right-2 {
+  right: -40rem;
+  top: -4rem;
+  width: 41rem;
+  filter: blur(113px);
+}
 
 @media (max-width: 680px) {
   .btn-component {

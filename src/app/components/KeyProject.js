@@ -7,8 +7,22 @@ const KeyProject = () => {
       <div className="key-projects-heading">
         <h1 className="key-projects-h1">Key Projects & Case Studies</h1>
         <h1 className="key-projects-h2">Case Studies</h1>
-        {/* <img src="./ellipse158.svg" className="ellipse-158 light" />
-        <img src="./ellipse158.svg" className="ellipse-159 light" /> */}
+        <img
+          src="../project-light-left-1.svg"
+          className="project-light-left-1"
+        />
+        <img
+          src="../project-light-left-1.svg"
+          className="project-light-left-2"
+        />
+        <img
+          src="../project-light-left-1.svg"
+          className="project-light-right-1"
+        />
+        <img
+          src="../project-light-left-2.svg"
+          className="project-light-right-2"
+        />
         <ViewMoreBtn text="View More" />
       </div>
       <div className="key-projects-project-mobile">

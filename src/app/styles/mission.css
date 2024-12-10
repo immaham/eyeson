@@ -61,7 +61,23 @@
   left: -6rem;
   z-index: -1;
 }
+.mission-light-1,
+.mission-light-2,
+.mission-light-3 {
+  position: absolute;
+  width: 38rem;
+}
 
+.mission-light-2 {
+  right: 27rem;
+  top: -2rem;
+  filter: blur(113px);
+}
+.mission-light-3 {
+  right: 6rem;
+  top: -12rem;
+  filter: blur(113px);
+}
 @media (max-width: 1300px) {
   .mission-description {
     position: unset;

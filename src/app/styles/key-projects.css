@@ -3,41 +3,46 @@
   flex-direction: column;
   height: 90rem;
   gap: 2rem;
+  position: relative;
 }
 .key-projects-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
 .key-projects-heading h1 {
   font-size: 3rem;
   font-weight: 600;
 }
-.key-projects-light {
+
+.project-light-left-1,
+.project-light-left-2,
+.project-light-right-1,
+.project-light-right-2 {
   position: absolute;
-  left: -9rem;
-  top: -13rem;
-  width: 32.69813rem;
-  height: 37.41488rem;
-  transform: rotate(-140.907deg) scale(1.9);
 }
-.ellipse-158 {
-  position: absolute;
-  left: -9rem;
-  top: -13rem;
-  width: 32.69813rem;
-  height: 37.41488rem;
-  transform: rotate(-270.907deg) scale(1.9);
+
+.project-light-left-2 {
+  display: none;
 }
-.ellipse-159 {
-  position: absolute;
-  right: -19rem;
-  top: 53rem;
-  width: 32.69813rem;
-  height: 37.41488rem;
-  transform: rotate(-140.907deg) scale(1.9);
+.project-light-left-1 {
+  left: -3.5rem;
+  top: 1.5rem;
+  height: 37rem;
+  filter: blur(113px);
+}
+.project-light-right-1 {
+  right: -12.5rem;
+  bottom: 15rem;
+  width: 39rem;
+  filter: blur(113px);
+}
+.project-light-right-2 {
+  right: -10rem;
+  bottom: 10rem;
+  height: 34rem;
+  filter: blur(113px);
 }
 .key-projects-project {
   width: 75.25rem;
