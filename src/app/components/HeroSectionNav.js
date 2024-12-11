@@ -13,6 +13,12 @@ const HeroSectionNav = () => {
           <img src="../vector5.svg" className="vector5 light" /> */}
           <p>EysOn</p>
         </div>
+        <img src="../hero-light-center.svg" className="hero-light-center" />
+        <img src="../hero-light-3.svg" className="hero-light-3" />
+        <img src="../hero-light-4.svg" className="hero-light-4" />
+        <img src="../hero-light-5.svg" className="hero-light-5" />
+        <img src="../hero-light-6.svg" className="hero-light-6" />
+        <img src="../hero-light-7.svg" className="hero-light-7" />
         <div className="nav-links">
           <a href="#">
             <p className="nav-link-home">Home</p>
