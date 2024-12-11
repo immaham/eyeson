@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lenis from "@studio-freight/lenis";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,6 +32,27 @@ const MissionCard = () => {
       stagger: 0.3,
       yoyo: true,
     });
+  }, []);
+
+  useEffect(() => {
+    // Initialize Lenis after the component mounts
+    const lenis = new Lenis({
+      smooth: true, // Enable smooth scrolling
+      lerp: 0.1, // The smooth scroll easing factor
+      infinite: false,
+    });
+
+    function raf(time) {
+      lenis.raf(time); // Update Lenis on each frame
+      requestAnimationFrame(raf); // Keep the animation loop running
+    }
+
+    requestAnimationFrame(raf); // Start the animation loop
+
+    return () => {
+      // Clean up Lenis when the component unmounts
+      lenis.destroy();
+    };
   }, []);
 
   return (
