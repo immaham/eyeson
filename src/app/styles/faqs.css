@@ -52,7 +52,6 @@
 }
 .content {
   margin-bottom: 1.75rem;
-  display: block;
 }
 .fill-animation {
   fill: transparent;
@@ -67,23 +66,17 @@
   fill: #eee8a9;
 }
 .content.open {
+  /* max-height: 100px;  */
   animation: open 0.5s linear both;
 }
 @keyframes open {
   0% {
     transform: translateX(2rem);
     opacity: 0;
-    display: none;
   }
-  /* 1% {
-    transform: translateX(2rem);
-    opacity: 0;
-    height: auto;
-  } */
   100% {
     transform: translateX(0);
     opacity: 0.9;
-    display: block;
   }
 }
 .content.closed {
@@ -94,7 +87,6 @@
   0% {
     transform: translateX(0);
     opacity: 0.9;
-    display: block;
   }
 
   100% {
@@ -207,8 +199,8 @@
     width: 21.5rem;
   }
   .faqs-right p {
-    font-size: 0.75rem;
-    width: 17.5rem;
+    font-size: 0.8rem;
+    width: 19rem;
   }
   .faqs-right h1 {
     font-size: 1rem;
@@ -245,7 +237,12 @@
     color: rgba(0, 145, 164, 1);
     font-size: 1rem;
   }
-  .content {
-    margin-bottom: 0;
+  .content.closed {
+    animation: none;
+    display: none;
+  }
+  .content.open {
+    animation: none;
+    display: block;
   }
 }
