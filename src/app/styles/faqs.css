@@ -52,6 +52,7 @@
 }
 .content {
   margin-bottom: 1.75rem;
+  height: 0;
 }
 .fill-animation {
   fill: transparent;
@@ -72,10 +73,17 @@
   0% {
     transform: translateX(2rem);
     opacity: 0;
+    height: auto;
   }
+  /* 1% {
+    transform: translateX(2rem);
+    opacity: 0;
+    height: auto;
+  } */
   100% {
     transform: translateX(0);
     opacity: 0.9;
+    height: auto;
   }
 }
 .content.closed {
@@ -86,11 +94,13 @@
   0% {
     transform: translateX(0);
     opacity: 0.9;
+    height: auto;
   }
 
   100% {
     transform: translateX(2rem);
     opacity: 0;
+    height: auto;
     display: none;
   }
 }
@@ -198,8 +208,8 @@
     width: 21.5rem;
   }
   .faqs-right p {
-    font-size: 0.8rem;
-    width: 19rem;
+    font-size: 0.75rem;
+    width: 17.5rem;
   }
   .faqs-right h1 {
     font-size: 1rem;
