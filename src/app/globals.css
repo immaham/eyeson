@@ -230,7 +230,7 @@ h1 {
 .hero-eye-circle-top {
   position: absolute;
   top: -2.5rem;
-  left: 2.61rem;
+  right: 3.8rem;
 }
 .hero-eye-circle-down {
   position: absolute;
@@ -299,30 +299,24 @@ h1 {
   }
 }
 
-.hero-light-left-container {
-  width: 26.93rem;
-  height: 38.07225rem;
-  transform: rotate(-90.907deg);
-  flex-shrink: 0;
+.hero-light-1,
+.hero-light-2 {
   position: absolute;
-  left: -50rem;
-  top: 15rem;
-  animation: left-light 0.6s ease-in 1s forwards;
+  height: 38rem;
+}
+.hero-light-2 {
+  left: -23rem;
+  top: -2rem;
+  filter: blur(113px);
+  animation: left-light 0.6s ease-in 1s both;
   opacity: 0;
 }
-.hero-dark-container {
-  position: absolute;
-  width: 600px;
-  height: 500px;
-  left: -40rem;
-  top: 0;
-  transform: rotate(114.75deg);
-  transform-origin: 0 0;
-  background-color: rgb(0, 0, 12);
-  box-shadow: 226px 226px 226px;
-  filter: blur(226px);
+.hero-light-1 {
+  right: -15rem;
+  top: -2rem;
+  z-index: 1;
   animation: right-dark 0.6s ease-in 1s both;
-  z-index: 10;
+  filter: blur(113px);
 }
 
 @keyframes left-light {
@@ -332,15 +326,15 @@ h1 {
   }
   100% {
     left: 20rem;
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 @keyframes right-dark {
   0% {
-    transform: translateX(110rem);
+    left: 60rem;
   }
   100% {
-    transform: translateX(0);
+    left: -25rem;
   }
 }
 .hero-light-left {

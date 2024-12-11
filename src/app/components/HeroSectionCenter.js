@@ -3,7 +3,9 @@ import React from "react";
 const HeroSectionCenter = () => {
   return (
     <section className="hero-section-center">
-      <div className="hero-dark-container"></div>
+      <img src="../hero-light-1.svg" className="hero-light-1" />
+      <img src="../hero-light-2.svg" className="hero-light-2" />
+      {/* <div className="hero-dark-container"></div>
       <div className="hero-light-left-container">
         <svg
           className="hero-light-left light"
@@ -44,7 +46,7 @@ const HeroSectionCenter = () => {
             </filter>
           </defs>
         </svg>
-      </div>
+      </div> */}
       <div className="hero-eye-top">
         <img src="../vector.svg" className="hero-eye-circle-top" />
         <img src="../rectangle.png" />
