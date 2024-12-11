@@ -238,11 +238,14 @@
     font-size: 1rem;
   }
   .content.closed {
-    animation: none;
+    /* animation: none; */
     display: none;
   }
   .content.open {
-    animation: none;
+    /* animation: none; */
     display: block;
+  }
+  .content {
+    margin-bottom: 0;
   }
 }
