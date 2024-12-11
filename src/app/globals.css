@@ -83,6 +83,27 @@ a {
   color: #ededed;
   position: relative;
 }
+.hero-light-1,
+.hero-light-2 {
+  position: absolute;
+  height: 38rem;
+}
+.hero-light-2 {
+  left: -23rem;
+  top: -2rem;
+  filter: blur(113px);
+  animation: left-light 0.6s ease-in 1.5s both;
+  opacity: 0;
+}
+.hero-light-1 {
+  right: -15rem;
+  top: -2rem;
+  height: 38rem;
+  width: 26rem;
+  z-index: 1;
+  animation: right-dark 0.6s ease-in 1.5s both;
+  filter: blur(100px);
+}
 .hero-light-center {
   position: absolute;
   width: 29rem;
@@ -175,7 +196,6 @@ a {
     rgba(255, 255, 255, 0) 100%
   );
   opacity: 0.3;
-  /* filter: blur(40px); */
 }
 .vector3 {
   position: absolute;
@@ -346,26 +366,6 @@ h1 {
   }
 }
 
-.hero-light-1,
-.hero-light-2 {
-  position: absolute;
-  height: 38rem;
-}
-.hero-light-2 {
-  left: -23rem;
-  top: -2rem;
-  filter: blur(113px);
-  animation: left-light 0.6s ease-in 1.5s both;
-  opacity: 0;
-}
-.hero-light-1 {
-  right: -15rem;
-  top: -2rem;
-  z-index: 1;
-  animation: right-dark 0.6s ease-in 1.5s both;
-  filter: blur(100px);
-}
-
 @keyframes left-light {
   0% {
     left: -60rem;
@@ -471,45 +471,20 @@ h1 {
   .hero-light-center {
     display: none;
   }
+
   .hero-light-3 {
-    position: absolute;
-    height: 3.6rem;
-    width: 3.7rem;
-    right: 0rem;
-    top: 8rem;
-    /* opacity: 0.3; */
-    /* filter: blur(100px); */
+    left: -10rem;
   }
   .hero-light-4 {
-    position: absolute;
-    height: 4.6rem;
-    width: 3.7rem;
-    right: -2.3rem;
-    top: -1.9rem;
-    filter: blur(100px);
+    left: -18rem;
   }
   .hero-light-5 {
-    position: absolute;
-    height: 4.8rem;
-    right: 0.8rem;
-    top: -2.7rem;
-    filter: blur(100px);
+    display: none;
   }
   .hero-light-6 {
-    position: absolute;
-    width: 3.5rem;
-    height: 4.6rem;
-    left: 0.6rem;
-    top: -2.8rem;
-    filter: blur(100px);
+    display: none;
   }
   .hero-light-7 {
-    position: absolute;
-    width: 10rem;
-    height: 12rem;
-    left: 15rem;
-    top: -2.3rem;
-    border: 1px solid wheat;
-    /* filter: blur(100px); */
+    display: none;
   }
 }
