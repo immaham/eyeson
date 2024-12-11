@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import ViewMoreBtn from "./../components/ViewMoreBtn";
 
 const KeyProject = () => {

@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import PortfolioCard from "./../components/PortfolioCard";
 
 const Portfolio = () => {

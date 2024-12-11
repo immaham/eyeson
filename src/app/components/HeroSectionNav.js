@@ -1,3 +1,4 @@
+"use client";
 const HeroSectionNav = () => {
   return (
     <section className="nav">

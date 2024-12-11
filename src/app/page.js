@@ -1,3 +1,4 @@
+"use client";
 import ContactSection from "./components/ContactSection";
 import EyesOn from "./components/EyesOn";
 import Faqs from "./components/Faqs";

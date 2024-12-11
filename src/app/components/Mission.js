@@ -10,7 +10,7 @@ const Mission = () => {
   const textRef = useRef();
 
   useEffect(() => {
-    if (window.innerWidth >= 680) {
+    if (window.innerWidth > 680) {
       gsap.from(textRef.current, {
         scrollTrigger: {
           trigger: textRef.current,
