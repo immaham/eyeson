@@ -22,13 +22,13 @@ const MissionCard = () => {
       scrollTrigger: {
         trigger: boxesArray,
         start: "top bottom",
-        end: "top center",
+        end: "top 60%",
         scrub: true,
         // toggleActions: "onEnter onLeave onEnterBack onLeaveBack",
       },
       y: 200,
       opacity: 0.3,
-      duration: 0.7,
+      duration: 1,
       stagger: 0.3,
       yoyo: true,
     });

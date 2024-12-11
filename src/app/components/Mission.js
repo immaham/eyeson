@@ -16,7 +16,7 @@ const Mission = () => {
         scrollTrigger: {
           trigger: textRef.current,
           start: "top bottom",
-          end: "top center",
+          end: "top 60%",
           scrub: true,
           // toggleActions: "onEnter onLeave onEnterBack onLeaveBack",
         },

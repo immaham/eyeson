@@ -2,7 +2,6 @@
 import Lenis from "@studio-freight/lenis";
 import ViewMoreBtn from "./ViewMoreBtn";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import SplitType from "split-type";
 
@@ -17,22 +16,52 @@ const Services = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".services-text1",
-        start: "top 80%",
+        start: "top 90%",
         end: "bottom center",
-        toggleActions: "play playe none reverse",
+        toggleActions: "play play none reverse",
       },
     });
 
-    tl.from(splitText.chars, {
-      duration: 1,
-      y: 50,
+    tl.from(".services-card", {
       opacity: 0,
-      stagger: 0.005,
-      ease: "power2.out",
-    });
+      y: 100,
+      duration: 0.8,
+      stagger: 0.3,
+    }).from(
+      splitText.chars,
+      {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        stagger: 0.005,
+        ease: "power2.out",
+      },
+      "0.5"
+    );
     return () => {
       // Cleanup on component unmount
       split.revert();
+    };
+  }, []);
+
+  useEffect(() => {
+    // Initialize Lenis after the component mounts
+    const lenis = new Lenis({
+      smooth: true, // Enable smooth scrolling
+      lerp: 0.1, // The smooth scroll easing factor
+      infinite: false,
+    });
+
+    function raf(time) {
+      lenis.raf(time); // Update Lenis on each frame
+      requestAnimationFrame(raf); // Keep the animation loop running
+    }
+
+    requestAnimationFrame(raf); // Start the animation loop
+
+    return () => {
+      // Clean up Lenis when the component unmounts
+      lenis.destroy();
     };
   }, []);
 
@@ -74,7 +103,7 @@ const Services = () => {
         />
         <img src="./logo-svg.svg" className="services-eye-logo" />
         <h1>Services</h1>
-        <p className="services-text1">
+        <p>
           Detailed information about our motion graphics and animation services,
           including examples and benefits.
         </p>
@@ -85,14 +114,14 @@ const Services = () => {
       <div className="services-cards">
         <div className="services-card">
           <h1>Motion Graphic</h1>
-          <p>
+          <p className="services-text1">
             Detailed information about our motion graphics and animation
             services, including examples and benefits.
           </p>
         </div>
         <div className="services-card">
           <h1>2D & 3D Animations</h1>
-          <p>
+          <p className="services-text1">
             An overview of our 3D video production services, showcasing our
             capabilities and past projects.
           </p>
