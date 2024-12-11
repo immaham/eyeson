@@ -1,7 +1,64 @@
 "use client";
+import SplitType from "split-type";
 import ViewMoreBtn from "./../components/ViewMoreBtn";
+import { gsap } from "gsap";
+import { useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 
 const KeyProject = () => {
+  useEffect(() => {
+    const splitText = new SplitType(".key-projects-motion", {
+      types: "chars", // You can use 'words' or 'lines' as well
+      tagName: "span", // Wraps each split part in a <span> tag
+    });
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".key-projects-motion",
+        start: "top 90%",
+        end: "bottom center",
+        toggleActions: "play play none reverse",
+      },
+    });
+
+    tl.from(
+      splitText.chars,
+      {
+        duration: 1,
+        opacity: 0,
+        x: -10,
+        stagger: 0.015,
+        ease: "power2.out",
+      },
+      "0.5"
+    );
+    return () => {
+      // Cleanup on component unmount
+      split.revert();
+    };
+  }, []);
+
+  useEffect(() => {
+    // Initialize Lenis after the component mounts
+    const lenis = new Lenis({
+      smooth: true, // Enable smooth scrolling
+      lerp: 0.1, // The smooth scroll easing factor
+      infinite: false,
+    });
+
+    function raf(time) {
+      lenis.raf(time); // Update Lenis on each frame
+      requestAnimationFrame(raf); // Keep the animation loop running
+    }
+
+    requestAnimationFrame(raf); // Start the animation loop
+
+    return () => {
+      // Clean up Lenis when the component unmounts
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <section className="key-projects">
       <div className="key-projects-heading">
@@ -33,7 +90,7 @@ const KeyProject = () => {
               <img src="./play-logo.svg" />
             </div>
             <h1>A brand 3d Design Characteristic for growth</h1>
-            <p className="key-projects-project-mobile-label-text">
+            <p className="key-projects-project-mobile-label-text key-projects-motion">
               Detailed information about our motion graphics and animation
               services, including examples and benefits.
             </p>
@@ -46,7 +103,7 @@ const KeyProject = () => {
               <img src="./play-logo.svg" />
             </div>
             <h1>A brand 3d Design Characteristic for growth</h1>
-            <p className="key-projects-project-mobile-label-text">
+            <p className="key-projects-project-mobile-label-text key-projects-motion">
               Detailed information about our motion graphics and animation
               services, including examples and benefits.
             </p>
@@ -59,7 +116,7 @@ const KeyProject = () => {
           <div className="key-projects-project-left-overlay">
             <p>3D Design</p>
             <h1>A brand 3d Design Characteristic for growth</h1>
-            <p>
+            <p className="key-projects-motion">
               Detailed information about our motion graphics and animation
               services, including examples and benefits.
             </p>
@@ -72,7 +129,7 @@ const KeyProject = () => {
           <div className="key-projects-project-left-overlay-second">
             <p>3D Design</p>
             <h1>A brand 3d Design Characteristic for growth</h1>
-            <p>
+            <p className="key-projects-motion">
               Detailed information about our motion graphics and animation
               services, including examples and benefits.
             </p>
