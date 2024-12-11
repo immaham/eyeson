@@ -10,18 +10,20 @@ const Mission = () => {
   const textRef = useRef();
 
   useEffect(() => {
-    gsap.from(textRef.current, {
-      scrollTrigger: {
-        trigger: textRef.current,
-        start: "top bottom",
-        end: "top center",
-        scrub: true,
-        // toggleActions: "onEnter onLeave onEnterBack onLeaveBack",
-      },
-      x: 300,
-      opacity: 0.3,
-      duration: 1,
-    });
+    if (window.innerWidth >= 680) {
+      gsap.from(textRef.current, {
+        scrollTrigger: {
+          trigger: textRef.current,
+          start: "top bottom",
+          end: "top center",
+          scrub: true,
+          // toggleActions: "onEnter onLeave onEnterBack onLeaveBack",
+        },
+        x: 300,
+        opacity: 0.3,
+        duration: 1,
+      });
+    }
   }, []);
 
   return (
