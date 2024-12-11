@@ -1,4 +1,9 @@
-import React from "react";
+"use client";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const missionCardContents = [
   { svg: "user.svg", description: "Increase Engagement" },
@@ -9,6 +14,25 @@ const missionCardContents = [
 ];
 
 const MissionCard = () => {
+  useEffect(() => {
+    const boxesArray = gsap.utils.toArray(".mission-card-container");
+
+    gsap.from(boxesArray, {
+      scrollTrigger: {
+        trigger: boxesArray,
+        start: "top bottom",
+        end: "top center",
+        scrub: true,
+        // toggleActions: "onEnter onLeave onEnterBack onLeaveBack",
+      },
+      y: 200,
+      opacity: 0.3,
+      duration: 0.7,
+      stagger: 0.3,
+      yoyo: true,
+    });
+  }, []);
+
   return (
     <>
       {missionCardContents.map((item, index) => (
