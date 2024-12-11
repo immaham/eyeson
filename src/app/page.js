@@ -2,7 +2,6 @@
 import ContactSection from "./components/ContactSection";
 import EyesOn from "./components/EyesOn";
 import Faqs from "./components/Faqs";
-import Footer from "./components/Footer";
 import HeroSectionBtn from "./components/HeroSectionBtn";
 import HeroSectionCenter from "./components/HeroSectionCenter";
 import HeroSectionNav from "./components/HeroSectionNav";

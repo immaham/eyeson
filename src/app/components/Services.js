@@ -5,14 +5,17 @@ const Services = () => {
   return (
     <section className="services">
       <div className="services-info">
-        <img src="../services-light-left.svg" className="services-light-left" />
+        <img
+          src="../services-light-left.svg"
+          className="services-light-left light-off"
+        />
         <img
           src="../services-light-right-1.svg"
-          className="services-light-right-1"
+          className="services-light-right-1 light-off"
         />
         <img
           src="../services-light-right-2.svg"
-          className="services-light-right-2"
+          className="services-light-right-2 light-off"
         />
         <img src="./logo-svg.svg" className="services-eye-logo" />
         <h1>Services</h1>

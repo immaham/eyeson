@@ -3,8 +3,8 @@
 const HeroSectionCenter = () => {
   return (
     <section className="hero-section-center">
-      <img src="../hero-light-1.svg" className="hero-light-1" />
-      <img src="../hero-light-2.svg" className="hero-light-2" />
+      <img src="../hero-light-1.svg" className="hero-light-1 light-off" />
+      <img src="../hero-light-2.svg" className="hero-light-2 light-off" />
       <div className="hero-eye-top">
         <img src="../vector.svg" className="hero-eye-circle-top" />
         <img src="../rectangle.png" />

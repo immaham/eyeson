@@ -434,9 +434,9 @@ h1 {
 }
 
 @media (max-width: 680px) {
-  /* .light {
+  .light-off {
     display: none;
-  } */
+  }
   .main {
     overflow: hidden;
     max-width: 30rem;

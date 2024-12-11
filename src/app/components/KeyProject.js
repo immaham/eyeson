@@ -9,19 +9,19 @@ const KeyProject = () => {
         <h1 className="key-projects-h2">Case Studies</h1>
         <img
           src="../project-light-left-1.svg"
-          className="project-light-left-1"
+          className="project-light-left-1 light-off"
         />
         <img
           src="../project-light-left-1.svg"
-          className="project-light-left-2"
+          className="project-light-left-2 light-off"
         />
         <img
           src="../project-light-left-1.svg"
-          className="project-light-right-1"
+          className="project-light-right-1 light-off"
         />
         <img
           src="../project-light-left-2.svg"
-          className="project-light-right-2"
+          className="project-light-right-2 light-off"
         />
         <ViewMoreBtn text="View More" />
       </div>

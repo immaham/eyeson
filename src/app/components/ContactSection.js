@@ -7,23 +7,23 @@ const ContactSection = () => {
       <h1>Contact Us</h1>
       <img
         src="../contact-us-backlight-left-1.svg"
-        className="contact-backlight-left-1 light"
+        className="contact-backlight-left-1 light-off"
       />
       <img
         src="../contact-us-backlight-right-1.svg"
-        className="contact-backlight-right-1 light"
+        className="contact-backlight-right-1 light-off"
       />
       <img
         src="../contact-us-backlight-right-2.svg"
-        className="contact-backlight-right-2 light"
+        className="contact-backlight-right-2 light-off"
       />
       <img
         src="../contact-us-backlight-right-3.svg"
-        className="contact-backlight-right-3 light"
+        className="contact-backlight-right-3 light-off"
       />
       <img
         src="../contact-us-backlight-right-4.svg"
-        className="contact-backlight-right-4 light"
+        className="contact-backlight-right-4 light-off"
       />
       <div className="form-container">
         <ContactForm />
