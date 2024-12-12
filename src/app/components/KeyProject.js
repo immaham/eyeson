@@ -14,24 +14,20 @@ const KeyProject = () => {
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".key-projects-motion",
+        trigger: ".key-projects",
         start: "top 90%",
         end: "bottom center",
-        toggleActions: "play play none reverse",
+        toggleActions: "play play reverse reverse",
       },
     });
 
-    tl.from(
-      splitText.chars,
-      {
-        duration: 1,
-        opacity: 0,
-        x: -10,
-        stagger: 0.015,
-        ease: "power2.out",
-      },
-      "0.5"
-    );
+    tl.from(splitText.chars, {
+      duration: 1,
+      opacity: 0,
+      x: -10,
+      stagger: 0.015,
+      ease: "power2.out",
+    });
     return () => {
       // Cleanup on component unmount
       split.revert();
