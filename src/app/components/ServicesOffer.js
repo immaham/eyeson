@@ -1,6 +1,35 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import gsap from "gsap";
 
 const ServicesOffer = () => {
+  // Duplicate cards for seamless loop
+  useEffect(() => {
+    const container = document.querySelector(".services-offer-cards");
+    const cards = document.querySelectorAll(".services-offer-card");
+
+    cards.forEach((card) => {
+      const clone = card.cloneNode(true);
+      container.appendChild(clone);
+    });
+
+    // Total width of the cards
+    const cardWidth = cards[0].offsetWidth + 20; // Card width + gap
+    const totalWidth = cardWidth * cards.length;
+
+    // GSAP animation
+    gsap.to(container, {
+      x: -totalWidth, // Move left by the total width of the cards
+      duration: 12, // Duration of the animation
+      ease: "linear", // Smooth linear movement
+      repeat: -1, // Infinite loop
+      modifiers: {
+        x: gsap.utils.wrap(-totalWidth, 0), // Seamless wrapping
+      },
+    }),
+      [];
+  });
+
   return (
     <div className="services-offer">
       <h1>We offer various services</h1>
