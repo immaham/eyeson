@@ -7,6 +7,8 @@ import "./styles/eyes-on.css";
 import "./styles/contact-form.css";
 import "./styles/faqs.css";
 import "./styles/footer.css";
+import "./styles/services-page.css";
+import "./styles/portfolio-page.css";
 import Footer from "./components/Footer";
 
 export const metadata = {

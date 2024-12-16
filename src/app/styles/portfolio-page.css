@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Barlow";
+  src: url("/fonts/Barlow-Regular.ttf") format("truetype"),
+    url("/fonts/Barlow-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("/fonts/Barlow-Bold.ttf") format("truetype"),
+    url("/fonts/Barlow-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("/fonts/Barlow-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("/fonts/Barlow-Thin.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.portfolio-page-container {
+  max-width: 75.25rem;
+  margin: 0 auto;
+}
+
+.portfolio-page-container p {
+  font-family: "Barlow", sans-serif;
+}

@@ -23,13 +23,12 @@ const MissionCard = () => {
         trigger: boxesArray,
         start: "top bottom",
         end: "top 60%",
-        scrub: true,
         // toggleActions: "onEnter onLeave onEnterBack onLeaveBack",
       },
       y: 200,
       opacity: 0.3,
       duration: 1,
-      stagger: 0.3,
+      stagger: 0.1,
       yoyo: true,
     });
   }, []);

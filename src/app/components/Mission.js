@@ -17,7 +17,6 @@ const Mission = () => {
           trigger: textRef.current,
           start: "top bottom",
           end: "top 60%",
-          scrub: true,
           // toggleActions: "onEnter onLeave onEnterBack onLeaveBack",
         },
         x: 300,

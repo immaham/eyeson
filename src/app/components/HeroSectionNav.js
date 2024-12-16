@@ -21,13 +21,13 @@ const HeroSectionNav = () => {
         <img src="../hero-light-6.svg" className="hero-light-6 light-off" />
         <img src="../hero-light-7.svg" className="hero-light-7 light-off" />
         <div className="nav-links">
-          <a href="#">
+          <a href="/">
             <p className="nav-link-home">Home</p>
           </a>
-          <a href="#">
+          <a href="/services">
             <p className="nav-link-services">Services</p>
           </a>
-          <a href="#">
+          <a href="/portfolio">
             <p className="nav-link-portfolio">Portfolio</p>
           </a>
         </div>
