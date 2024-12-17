@@ -38,11 +38,6 @@
   z-index: 2;
 }
 
-.services-offer-slider .cards {
-  display: flex;
-  gap: 1.5rem;
-  position: relative;
-}
 .services-offer-slider .card {
   position: absolute;
   right: 100%;
@@ -99,10 +94,10 @@
 
 @keyframes autoslide {
   0% {
-    transform: translateX(0);
+    transform: translateX(20rem);
   }
   100% {
-    transform: translateX(110rem);
+    transform: translateX(126rem);
   }
 }
 
@@ -226,18 +221,18 @@
   top: 0;
   right: 100%;
   animation: autoslide2 9s linear infinite;
-  animation-delay: calc(3s * (var(--position) - 1));
+  animation-delay: calc(3s * (var(--position) - 6));
 }
 
-.sliders-container .slider:nth-last-of-type(2) .card {
+.sliders-container .slider:nth-of-type(2) .card {
   width: 33rem;
   height: 17.8rem;
   flex-shrink: 0;
   position: absolute;
   top: 0;
   left: 100%;
-  animation: autoslide3 9s linear infinite;
-  animation-delay: calc(3s * (var(--position) - 1));
+  animation: autoslide3 12s linear infinite;
+  animation-delay: calc(4s * (var(--position) - 5));
 }
 
 .sliders-container .card img {
@@ -248,8 +243,61 @@
   transform: scaleX(-1);
 }
 
+.sliders-container .slider:nth-of-type(2) .card:nth-of-type(1) img {
+  width: 50%;
+  transform: translateX(109%);
+}
+.sliders-container .slider:nth-of-type(2) .card:nth-of-type(4) img {
+  width: 50%;
+}
 .sliders-container .slider:hover .card {
   animation-play-state: paused;
+}
+
+.sliders-container .overlay {
+  border-radius: 1rem;
+  background-color: rgba(12, 49, 42, 0.3);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  padding: 1.5rem;
+  transition: all 0.5s ease-in;
+}
+.sliders-container .card .overlay {
+  transform: translateY(6rem);
+}
+.sliders-container .card:hover .overlay {
+  transform: translateY(0);
+}
+.sliders-container .overlay p {
+  width: 14rem;
+  font-size: 1.25rem;
+}
+.btn-component2 {
+  background-color: transparent;
+  color: #f1edba;
+  border: 1px solid #f1edba;
+  border-radius: 2rem;
+  height: 3.5rem;
+  display: inline-flex;
+  padding: 0.5rem 1rem 0.4375rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  font-family: "Barlow";
+  cursor: pointer;
+}
+
+.btn-component2 img {
+  transform: rotateX(180deg) !important;
 }
 @keyframes autoslide2 {
   0% {

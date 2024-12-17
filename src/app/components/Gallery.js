@@ -1,5 +1,6 @@
 import React from "react";
 import ViewMoreBtn from "./ViewMoreBtn";
+import ViewMoreBtnTransparent from "./ViewMoreBtnTransparent";
 
 const Gallery = () => {
   return (
@@ -12,47 +13,47 @@ const Gallery = () => {
         <div className="slider">
           <div className="card" style={{ "--position": 1 }}>
             <img src="./services-gallery3.jpeg" />
-            <div className="overlay"></div>
+            <ViewMoreBtnTransparent />
           </div>
           <div className="card" style={{ "--position": 2 }}>
             <img src="./services-gallery2.jpeg" />
-            <div className="overlay"></div>
+            <ViewMoreBtnTransparent />
           </div>
           <div className="card" style={{ "--position": 3 }}>
             <img src="./services-gallery1.jpeg" />
-            <div className="overlay"></div>
+            <ViewMoreBtnTransparent />
           </div>
         </div>
         <div className="slider">
           <div className="card" style={{ "--position": 1 }}>
             <img src="./services-gallery4.png" />
-            <div className="overlay"></div>
+            {/* <ViewMoreBtnTransparent /> */}
           </div>
           <div className="card" style={{ "--position": 2 }}>
             <img src="./services-gallery5.png" />
-            <div className="overlay"></div>
+            <ViewMoreBtnTransparent />
           </div>
           <div className="card" style={{ "--position": 3 }}>
             <img src="./services-gallery6.jpeg" />
-            <div className="overlay"></div>
+            <ViewMoreBtnTransparent />
           </div>
           <div className="card" style={{ "--position": 4 }}>
             <img src="./services-gallery7.png" />
-            <div className="overlay"></div>
+            {/* <ViewMoreBtnTransparent /> */}
           </div>
         </div>
         <div className="slider" style={{ "--position": 1 }}>
           <div className="card">
             <img src="./services-gallery8.jpeg" />
-            <div className="overlay"></div>
+            <ViewMoreBtnTransparent />
           </div>
           <div className="card" style={{ "--position": 2 }}>
             <img src="./services-gallery9.png" />
-            <div className="overlay"></div>
+            <ViewMoreBtnTransparent />
           </div>
           <div className="card" style={{ "--position": 3 }}>
             <img src="./services-gallery10.jpeg" />
-            <div className="overlay"></div>
+            <ViewMoreBtnTransparent />
           </div>
         </div>
       </section>
