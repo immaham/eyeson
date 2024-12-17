@@ -44,7 +44,7 @@
   overflow: hidden;
   z-index: 2;
   animation: autoslide 12s linear infinite;
-  animation-delay: calc(2s * (var(--position) - 1));
+  animation-delay: calc(2s * (var(--position) - 6));
 }
 
 .services-offer-slider .card img {
