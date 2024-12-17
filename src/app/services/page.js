@@ -1,3 +1,4 @@
+import Benefits from "../components/Benefits";
 import ContactSection from "../components/ContactSection";
 import Design from "../components/Design";
 import Faqs from "../components/Faqs";
@@ -12,6 +13,7 @@ const page = () => {
       <ServicesOffer />
       <Design />
       <Gallery />
+      <Benefits />
       <Faqs />
       <ContactSection />
     </section>
