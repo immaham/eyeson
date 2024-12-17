@@ -5,6 +5,8 @@
   font-family: "Barlow", sans-serif;
 }
 
+/* ------ SERVICES OFFER ------ */
+
 .services-offer {
   display: flex;
   flex-direction: column;
@@ -95,4 +97,74 @@
   100% {
     transform: translateX(110rem);
   }
+}
+
+/* ------ SERVICES DESIGN ------ */
+
+.services-design {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12rem;
+  gap: 3rem;
+  position: relative;
+}
+
+.services-design h1 {
+  font-size: 3.05188rem;
+  font-weight: 700;
+}
+
+.services-design .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 1;
+}
+
+.services-light1 {
+  width: 38rem;
+  position: absolute;
+  left: 10rem;
+  top: 11rem;
+  z-index: -1;
+  filter: blur(113px);
+}
+
+.services-design .card {
+  display: flex;
+  align-items: flex-end;
+  gap: 8rem;
+  padding: 2.5rem;
+  width: 100%;
+  height: 26rem;
+  border-radius: 1rem;
+  background: rgba(112, 249, 224, 0.1);
+  backdrop-filter: blur(10.449999809265137px);
+}
+
+.services-design .card img {
+  width: 36.875rem;
+  height: 21.5625rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.services-design .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+.services-design .card-content h1 {
+  font-size: 1.95rem;
+  font-weight: 600;
+}
+.services-design .card-content span {
+  color: #eee8a9;
+  margin-right: 1rem;
+}
+.services-design .card-content p {
+  width: 25rem;
+  font-size: 1rem;
+  font-weight: 400;
 }
