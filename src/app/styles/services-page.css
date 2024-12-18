@@ -263,6 +263,47 @@
   font-weight: 400;
 }
 
+@media (max-width: 1300px) {
+  .services-design {
+    align-items: center;
+  }
+  .services-design h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    width: 20rem;
+  }
+  .services-design .card {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 21rem;
+    height: 28.5rem;
+  }
+  .services-design .card img {
+    width: 18rem;
+    height: 18rem;
+    flex-shrink: 0;
+    /* border-radius: 1rem; */
+    /* object-fit: cover; */
+  }
+  .services-design .card-content h1 {
+    font-size: 1.25rem;
+  }
+
+  .services-design .card-content p {
+    width: 18.5rem;
+    font-size: 0.8rem;
+  }
+  .services-design .card-content {
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+  .services-design .card-content span {
+    margin-right: 0.5rem;
+  }
+}
 /* ------ SERVICES GALLERY ------ */
 
 .services-gallery {
