@@ -200,11 +200,18 @@
     width: 100%;
     mask-image: none;
   }
+
   .services-offer-slider:hover .card {
     animation-play-state: running;
   }
 
   .services-offer-slider .card:hover img {
+    filter: none;
+  }
+  .services-offer-slider:hover .overlay {
+    filter: none;
+  }
+  .services-offer-slider:hover img {
     filter: none;
   }
 
