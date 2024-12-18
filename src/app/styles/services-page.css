@@ -193,6 +193,7 @@
   .services-offer-slider .card img {
     height: 15.1rem;
     width: 8.6rem;
+    user-select: none;
   }
 
   .services-offer-slider {
