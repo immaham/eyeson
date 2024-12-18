@@ -300,6 +300,7 @@
   .services-design .card-content {
     gap: 1rem;
     margin-bottom: 0;
+    margin-left: 2rem;
   }
   .services-design .card-content span {
     margin-right: 0.5rem;
