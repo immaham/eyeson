@@ -168,9 +168,23 @@
 }
 
 @media (max-width: 740px) {
+  .services-offer-slider-container {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+    clip-path: inset(0 0 0 0);
+  }
+  .services-offer {
+    width: 100%;
+    overflow: hidden;
+  }
   .services-offer-slider .card {
     height: 15.1rem;
     width: 8.6rem;
+    animation: autoslide 24s linear infinite;
+    animation-delay: calc(4s * (var(--position) - 6));
   }
   .services-offer h1 {
     font-size: 1.5rem;
@@ -180,10 +194,12 @@
     height: 15.1rem;
     width: 8.6rem;
   }
+
   .services-offer-slider {
     width: 100%;
     mask-image: none;
   }
+
   @keyframes autoslide {
     0% {
       transform: translateX(0rem);
@@ -474,8 +490,10 @@
   }
   .sliders-container {
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
-    width: 23rem;
+    width: 100%;
     height: 30rem;
     gap: 0.5rem;
     padding: 0;
@@ -485,7 +503,7 @@
     display: none;
   }
   .sliders-container .slider {
-    width: 12rem;
+    width: 11rem;
     height: 100%;
     mask-image: linear-gradient(
       to right,
@@ -493,7 +511,6 @@
       #ffffff 1% 99%,
       transparent
     );
-    margin-right: 0.1rem;
   }
   .sliders-container .card {
     width: 11rem;
@@ -518,6 +535,9 @@
   }
   .sliders-container .card .overlay {
     display: none;
+  }
+  .sliders-container .slider:hover .card {
+    animation-play-state: running;
   }
 }
 /* ------ SERVICES BENEFITS ------ */
