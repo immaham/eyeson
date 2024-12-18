@@ -47,8 +47,8 @@
   transition: all 1s;
   overflow: hidden;
   z-index: 2;
-  animation: autoslide 12s linear infinite;
-  animation-delay: calc(2s * (var(--position) - 6));
+  animation: autoslide 24s linear infinite;
+  animation-delay: calc(4s * (var(--position) - 6));
 }
 
 .services-offer-slider .card img {
@@ -94,11 +94,14 @@
 
 @keyframes autoslide {
   0% {
-    transform: translateX(20rem);
+    transform: translateX(10rem);
   }
   100% {
-    transform: translateX(134rem);
+    transform: translateX(120rem);
   }
+}
+
+@media (max-width: 1000px) {
 }
 
 /* ------ SERVICES DESIGN ------ */
