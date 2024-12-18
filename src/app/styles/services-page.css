@@ -148,6 +148,15 @@
     height: 18.1rem;
     width: 10.3rem;
   }
+  .services-offer-slider .overlay {
+    height: 2.4rem;
+    border-radius: 0.3rem;
+  }
+  .services-offer-slider .card p {
+    font-size: 0.75rem;
+    bottom: 0.75rem;
+    left: 0.5rem;
+  }
   @keyframes autoslide {
     0% {
       transform: translateX(0rem);
