@@ -199,6 +199,13 @@
     width: 100%;
     mask-image: none;
   }
+  .services-offer-slider:hover .card {
+    animation-play-state: running;
+  }
+
+  .services-offer-slider .card:hover img {
+    filter: none;
+  }
 
   @keyframes autoslide {
     0% {
