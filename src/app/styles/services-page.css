@@ -267,11 +267,15 @@
   .services-design {
     align-items: center;
     margin-top: 8.5rem;
+    gap: 1.5rem;
   }
   .services-design h1 {
     font-size: 1.25rem;
     font-weight: 700;
     width: 20rem;
+  }
+  .services-design .cards {
+    gap: 1.5rem;
   }
   .services-design .card {
     flex-direction: column-reverse;
@@ -451,6 +455,71 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .services-gallery {
+    margin-top: 3.75rem;
+    margin-bottom: 4rem;
+  }
+  .services-gallery .header {
+    max-width: 21rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+  }
+  .services-gallery .header h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .sliders-container {
+    flex-direction: row;
+    margin: 0 auto;
+    width: 23rem;
+    height: 30rem;
+    gap: 0.5rem;
+    padding: 0;
+    border-radius: 1rem;
+  }
+  .sliders-container .slider:nth-of-type(2) {
+    display: none;
+  }
+  .sliders-container .slider {
+    width: 12rem;
+    height: 100%;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #ffffff 1% 99%,
+      transparent
+    );
+    margin-right: 0.1rem;
+  }
+  .sliders-container .card {
+    width: 11rem;
+    height: 14rem;
+    flex-shrink: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    animation: autoslide2 9s linear infinite;
+    animation-delay: calc(3s * (var(--position) - 6));
+  }
+  .sliders-container .slider:nth-of-type(3) .card {
+    animation-direction: reverse;
+  }
+  @keyframes autoslide2 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-45rem);
+    }
+  }
+  .sliders-container .card .overlay {
+    display: none;
+  }
+}
 /* ------ SERVICES BENEFITS ------ */
 
 .services-benefits {
