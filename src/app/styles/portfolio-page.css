@@ -31,6 +31,8 @@
 .portfolio-page-container {
   max-width: 75.25rem;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio-page-container p {
