@@ -4,7 +4,7 @@ const Design = () => {
   return (
     <section className="services-design">
       <h1>bring your brand to life with our design services</h1>
-      <img src="../services-light1.svg" className="services-light1 light-off" />
+      <img src="../services-light1.svg" className="services-light1" />
       <div className="cards">
         <div className="card">
           <div className="card-content">

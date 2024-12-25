@@ -378,6 +378,11 @@
     position: relative;
     overflow: hidden;
   }
+  .btn-container {
+    background-color: #70f9e01a;
+    padding: 1.5rem 0;
+    margin-bottom: 0;
+  }
 }
 
 /* ------ PORTFOLIO IDEAS ------ */

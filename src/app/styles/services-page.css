@@ -343,6 +343,16 @@
     margin-right: 0.5rem;
   }
 }
+@media (max-width: 680px) {
+  .services-light1 {
+    width: 23rem;
+    position: absolute;
+    left: -1rem;
+    top: 18rem;
+    z-index: -1;
+    filter: blur(100px);
+  }
+}
 /* ------ SERVICES GALLERY ------ */
 
 .services-gallery {
