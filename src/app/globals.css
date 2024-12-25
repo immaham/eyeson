@@ -468,11 +468,12 @@ h1 {
     align-self: baseline;
   }
   .hero-light-center {
-    display: none;
+    /* display: none; */
     position: absolute;
-    width: 29rem;
+    width: 18rem;
+    height: 31rem;
     left: 50vw;
-    top: -21rem;
+    top: -11rem;
     transform: translateX(-55%);
     z-index: -2;
   }
