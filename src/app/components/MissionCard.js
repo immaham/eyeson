@@ -17,42 +17,43 @@ const missionCardContents = [
 const MissionCard = () => {
   useEffect(() => {
     const boxesArray = gsap.utils.toArray(".mission-card-container");
-
-    gsap.from(boxesArray, {
-      scrollTrigger: {
-        trigger: boxesArray,
-        start: "top bottom",
-        end: "top 60%",
-        // toggleActions: "onEnter onLeave onEnterBack onLeaveBack",
-      },
-      y: 200,
-      opacity: 0.3,
-      duration: 1,
-      stagger: 0.1,
-      yoyo: true,
-    });
+    if (window.innerWidth > 680) {
+      gsap.from(boxesArray, {
+        scrollTrigger: {
+          trigger: boxesArray,
+          start: "top bottom",
+          end: "top 60%",
+          // toggleActions: "onEnter onLeave onEnterBack onLeaveBack",
+        },
+        y: 200,
+        opacity: 0.3,
+        duration: 1,
+        stagger: 0.2,
+        yoyo: true,
+      });
+    }
   }, []);
 
-  // useEffect(() => {
-  //   // Initialize Lenis after the component mounts
-  //   const lenis = new Lenis({
-  //     smooth: true, // Enable smooth scrolling
-  //     lerp: 0.1, // The smooth scroll easing factor
-  //     infinite: false,
-  //   });
+  useEffect(() => {
+    // Initialize Lenis after the component mounts
+    const lenis = new Lenis({
+      smooth: true, // Enable smooth scrolling
+      lerp: 0.1, // The smooth scroll easing factor
+      infinite: false,
+    });
 
-  //   function raf(time) {
-  //     lenis.raf(time); // Update Lenis on each frame
-  //     requestAnimationFrame(raf); // Keep the animation loop running
-  //   }
+    function raf(time) {
+      lenis.raf(time); // Update Lenis on each frame
+      requestAnimationFrame(raf); // Keep the animation loop running
+    }
 
-  //   requestAnimationFrame(raf); // Start the animation loop
+    requestAnimationFrame(raf); // Start the animation loop
 
-  //   return () => {
-  //     // Clean up Lenis when the component unmounts
-  //     lenis.destroy();
-  //   };
-  // }, []);
+    return () => {
+      // Clean up Lenis when the component unmounts
+      lenis.destroy();
+    };
+  }, []);
 
   return (
     <>
