@@ -53,37 +53,37 @@ const Creativity = () => {
         <div className="btn-container">
           <button
             onClick={() => SetActiveBtn(1)}
-            className={activeBtn === 1 && "active"}
+            className={activeBtn === 1 ? "active" : ""}
           >
             Motion Design
           </button>
           <button
             onClick={() => SetActiveBtn(2)}
-            className={activeBtn === 2 && "active"}
+            className={activeBtn === 2 ? "active" : ""}
           >
             Graphic Design
           </button>
           <button
             onClick={() => SetActiveBtn(3)}
-            className={activeBtn === 3 && "active"}
+            className={activeBtn === 3 ? "active" : ""}
           >
             2D 3D Animations
           </button>
           <button
             onClick={() => SetActiveBtn(4)}
-            className={activeBtn === 4 && "active"}
+            className={activeBtn === 4 ? "active" : ""}
           >
             Social Media Content
           </button>
           <button
             onClick={() => SetActiveBtn(5)}
-            className={activeBtn === 5 && "active"}
+            className={activeBtn === 5 ? "active" : ""}
           >
             Video Editing
           </button>
           <button
             onClick={() => SetActiveBtn(6)}
-            className={activeBtn === 6 && "active"}
+            className={activeBtn === 6 ? "active" : ""}
           >
             VFX & Effects
           </button>
