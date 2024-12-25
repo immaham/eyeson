@@ -43,7 +43,6 @@ body {
   color: #fff;
   font-family: "Barlow", sans-serif;
   background-color: var(--primary-color);
-  overflow-x: hidden;
 }
 
 a {
@@ -437,6 +436,7 @@ h1 {
     display: none;
   }
   .main {
+    position: relative;
     overflow: hidden;
     max-width: 30rem;
   }
