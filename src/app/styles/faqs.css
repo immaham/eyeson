@@ -201,6 +201,7 @@
   .faqs-right p {
     font-size: 0.8rem;
     width: 19rem;
+    margin-bottom: 1.5rem;
   }
   .faqs-right h1 {
     font-size: 1rem;
@@ -254,5 +255,19 @@
     height: 34rem;
     filter: blur(113px);
     opacity: 0.86;
+  }
+  .faqs-light-right-1 {
+    right: 3rem;
+    top: 14rem;
+    width: 17rem;
+    filter: blur(113px);
+    opacity: 0.56;
+  }
+  .faqs-light-right-2 {
+    right: 0rem;
+    top: 23rem;
+    width: 24rem;
+    filter: blur(113px);
+    opacity: 0.56;
   }
 }

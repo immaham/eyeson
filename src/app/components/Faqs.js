@@ -44,14 +44,8 @@ const Faqs = () => {
   return (
     <section className="faqs">
       <img src="./faqs-light-left-1.svg" className="faqs-light-left-1 " />
-      <img
-        src="./faqs-light-right-1.svg"
-        className="faqs-light-right-1 light-off"
-      />
-      <img
-        src="./faqs-light-right-2.svg"
-        className="faqs-light-right-2 light-off"
-      />
+      <img src="./faqs-light-right-1.svg" className="faqs-light-right-1" />
+      <img src="./faqs-light-right-2.svg" className="faqs-light-right-2 " />
       <img
         src="./faqs-light-right-3.svg"
         className="faqs-light-right-3 light-off"
