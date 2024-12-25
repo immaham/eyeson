@@ -438,7 +438,7 @@ h1 {
   .main {
     position: relative;
     overflow: hidden;
-    max-width: 30rem;
+    max-width: 42.5rem;
   }
   .nav-container {
     max-width: 40rem;
