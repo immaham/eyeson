@@ -51,14 +51,8 @@ const Mission = () => {
     <div className="mission-container">
       <section className="mission">
         {/* <img src="../mission-light-1.svg" className="mission-light-1" /> */}
-        <img
-          src="../mission-light-2.svg"
-          className="mission-light-2 light-off"
-        />
-        <img
-          src="../mission-light-3.svg"
-          className="mission-light-3 light-off"
-        />
+        <img src="../mission-light-2.svg" className="mission-light-2" />
+        <img src="../mission-light-3.svg" className="mission-light-3" />
         <h1 className="mission-title">What is our mission</h1>
         <p ref={textRef} className="mission-description">
           Detailed information about our motion graphics and animation services,

@@ -82,7 +82,33 @@
   font-size: 1.25rem;
   font-family: "Barlow";
 }
+.services-light-left,
+.services-light-right-1,
+.services-light-right-2 {
+  position: absolute;
+}
+.services-light-left {
+  position: absolute;
+  left: -15rem;
+  top: -19rem;
+  height: 33rem;
+  width: 28rem;
+  filter: blur(113px);
+  /* display: none; */
+}
 
+.services-light-right-1 {
+  right: -45rem;
+  top: 2rem;
+  width: 38rem;
+  filter: blur(113px);
+}
+.services-light-right-2 {
+  right: -40rem;
+  top: -4rem;
+  width: 41rem;
+  filter: blur(113px);
+}
 @media (max-width: 1300px) {
   .btn-component {
     background-color: #002c3f;
@@ -121,30 +147,14 @@
   .services-info h1 {
     font-size: 2rem;
   }
-}
-.services-light-left,
-.services-light-right-1,
-.services-light-right-2 {
-  position: absolute;
-}
-.services-light-left {
-  left: -20rem;
-  top: -18rem;
-  height: 33rem;
-  width: 28rem;
-  filter: blur(113px);
-}
-.services-light-right-1 {
-  right: -45rem;
-  top: 2rem;
-  width: 38rem;
-  filter: blur(113px);
-}
-.services-light-right-2 {
-  right: -40rem;
-  top: -4rem;
-  width: 41rem;
-  filter: blur(113px);
+
+  .services-light-left {
+    left: 18rem;
+    top: -22rem;
+    height: 33rem;
+    width: 28rem;
+    filter: blur(113px);
+  }
 }
 
 @media (max-width: 680px) {
@@ -190,6 +200,19 @@
     width: 19.275rem;
     font-size: 1rem;
   }
+  .services-light-right-1 {
+    right: -45rem;
+    top: 2rem;
+    width: 18rem;
+    filter: blur(113px);
+  }
+  .services-light-left {
+    left: 11rem;
+    top: -25rem;
+    height: 33rem;
+    width: 28rem;
+    filter: blur(113px);
+  }
 }
 @media (max-width: 430px) {
   .services-info p {
@@ -204,17 +227,21 @@
     font-weight: 600;
     margin-left: 2rem;
   }
+  .services-cards {
+    gap: 1rem;
+  }
   .services-card {
-    width: 17.82rem;
+    width: 21rem;
     height: auto;
-    padding: 1.2rem 1.2rem 1.875rem;
+    padding: 1rem 1rem 1.5rem;
+    gap: 0rem;
   }
   .services-card h1 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .services-card p {
-    width: 14.275rem;
-    font-size: 1rem;
+    width: 18rem;
+    font-size: 0.8rem;
   }
 }

@@ -15,11 +15,11 @@ const HeroSectionNav = () => {
           <p>EysOn</p>
         </div>
         <img src="../hero-light-center.svg" className="hero-light-center" />
-        <img src="../hero-light-3.svg" className="hero-light-3 light-off" />
-        <img src="../hero-light-4.svg" className="hero-light-4 light-off" />
-        <img src="../hero-light-5.svg" className="hero-light-5 light-off" />
-        <img src="../hero-light-6.svg" className="hero-light-6 light-off" />
-        <img src="../hero-light-7.svg" className="hero-light-7 light-off" />
+        <img src="../hero-light-3.svg" className="hero-light-3" />
+        <img src="../hero-light-4.svg" className="hero-light-4" />
+        <img src="../hero-light-5.svg" className="hero-light-5" />
+        <img src="../hero-light-6.svg" className="hero-light-6" />
+        <img src="../hero-light-7.svg" className="hero-light-7" />
         <div className="nav-links">
           <a href="/">
             <p className="nav-link-home">Home</p>

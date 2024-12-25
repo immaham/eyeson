@@ -136,6 +136,26 @@
     font-weight: 500;
     font-size: 1.25rem;
   }
+  .mission-card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+    padding: 2rem 0.75rem;
+    background-color: #70f9e01a;
+    max-width: 9.75rem;
+    height: 9.625rem;
+    border-radius: 1rem;
+    box-shadow: #2ddef31a 1px 1px 1px, #70f9e01a 1px 1px 1px,
+      #2ddff300 1px -1px 1px, #2ddff300 1px 1px 1px, #70f9e01a -1px -2px 1px;
+    /* box-shadow: #2ddff3e6, #70f9e0cb, #70f9e0cb; */
+  }
+  .mission-light-2 {
+    right: 0rem;
+    width: 21rem;
+    top: 12rem;
+    filter: blur(113px);
+  }
 }
 @media (max-width: 430px) {
   .mission {
