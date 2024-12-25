@@ -152,8 +152,8 @@
   }
   .mission-light-2 {
     /* display: none; */
-    right: 0rem;
-    width: 21rem;
+    left: -1.5rem;
+    width: 18rem;
     top: 12rem;
     filter: blur(113px);
   }
