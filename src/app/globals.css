@@ -475,7 +475,24 @@ h1 {
     transform: translateX(-55%);
     z-index: -2;
   }
-
+  .hero-light-1,
+  .hero-light-2 {
+    height: 20rem;
+  }
+  .hero-light-2 {
+    top: 8rem;
+    filter: blur(113px);
+    animation: left-light 0.6s ease-in 1.5s both;
+    opacity: 0;
+  }
+  .hero-light-1 {
+    top: 8rem;
+    height: 20rem;
+    width: 15rem;
+    z-index: 10;
+    animation: right-dark 0.6s ease-in 1.5s both;
+    filter: blur(100px);
+  }
   .hero-light-3 {
     top: -20rem;
     right: -25rem;
