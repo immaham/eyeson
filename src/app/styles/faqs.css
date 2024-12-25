@@ -248,4 +248,11 @@
   .content {
     margin-bottom: 0;
   }
+  .faqs-light-left-1 {
+    left: -8rem;
+    top: 29rem;
+    height: 34rem;
+    filter: blur(113px);
+    opacity: 0.86;
+  }
 }

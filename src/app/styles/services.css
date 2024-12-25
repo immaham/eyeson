@@ -200,20 +200,22 @@
     width: 19.275rem;
     font-size: 1rem;
   }
+
   .services-light-right-1 {
-    display: none;
-    right: -45rem;
-    top: 2rem;
-    width: 18rem;
-    filter: blur(113px);
+    /* display: none; */
+    right: -1rem;
+    top: 14rem;
+    width: 21rem;
+    filter: blur(63px);
   }
   .services-light-left {
-    display: none;
-    left: 11rem;
-    top: -25rem;
-    height: 33rem;
-    width: 28rem;
-    filter: blur(113px);
+    /* display: none; */
+    left: 12rem;
+    top: -19rem;
+    height: 17rem;
+    width: 17rem;
+    filter: blur(65px);
+    transform: rotate(90deg);
   }
 }
 @media (max-width: 430px) {

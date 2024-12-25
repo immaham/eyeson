@@ -43,10 +43,7 @@ const Faqs = () => {
 
   return (
     <section className="faqs">
-      <img
-        src="./faqs-light-left-1.svg"
-        className="faqs-light-left-1 light-off"
-      />
+      <img src="./faqs-light-left-1.svg" className="faqs-light-left-1 " />
       <img
         src="./faqs-light-right-1.svg"
         className="faqs-light-right-1 light-off"
