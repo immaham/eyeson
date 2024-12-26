@@ -18,7 +18,7 @@
     -50%,
     -50%
   ); /* Centers the gradient around its position */
-  z-index: 1000; /* Ensures it stays on top of content */
+  z-index: 1; /* Ensures it stays on top of content */
   filter: blur(120px);
   transition: transform 0.05s linear;
 }

@@ -1,3 +1,4 @@
+"use client";
 import Benefits from "../components/Benefits";
 import ContactSection from "../components/ContactSection";
 import Design from "../components/Design";

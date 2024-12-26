@@ -1,10 +1,37 @@
-import React from "react";
+"use client";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Design = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const lightRef = useRef();
+  useEffect(() => {
+    {
+      gsap.from(lightRef.current, {
+        scrollTrigger: {
+          trigger: lightRef.current,
+          start: "bottom bottom",
+          end: "top 50%",
+          // toggleActions: "onEnter onLeave onEnterBack onLeaveBack",
+        },
+        // y: 100,
+        scale: 0.5,
+        opacity: 0,
+        duration: 1,
+        // ease: "bounce.inOut",
+      });
+    }
+  }, []);
+
   return (
     <section className="services-design">
       <h1>bring your brand to life with our design services</h1>
-      <img src="../services-light1.svg" className="services-light1" />
+      <img
+        ref={lightRef}
+        src="../services-light1.svg"
+        className="services-light1"
+      />
       <div className="cards">
         <div className="card">
           <div className="card-content">

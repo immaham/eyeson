@@ -34,6 +34,7 @@
   border-radius: 1rem;
   padding: 3rem 1.45rem 3rem 1.2rem;
   background-color: #70f9e010;
+  z-index: 2;
 }
 .faqs-right h1 {
   font-size: 1.25rem;

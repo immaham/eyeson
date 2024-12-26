@@ -51,6 +51,7 @@
   border: 1px solid #70f9e01a;
   position: relative;
   overflow: hidden;
+  z-index: 1000;
 }
 
 .key-projects-project-left {
