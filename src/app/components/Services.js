@@ -1,5 +1,5 @@
 "use client";
-import Lenis from "@studio-freight/lenis";
+// import Lenis from "@studio-freight/lenis";
 import ViewMoreBtn from "./ViewMoreBtn";
 import { gsap } from "gsap";
 import { useEffect } from "react";
@@ -44,47 +44,47 @@ const Services = () => {
     };
   }, []);
 
-  useEffect(() => {
-    // Initialize Lenis after the component mounts
-    const lenis = new Lenis({
-      smooth: true, // Enable smooth scrolling
-      lerp: 0.1, // The smooth scroll easing factor
-      infinite: false,
-    });
+  // useEffect(() => {
+  //   // Initialize Lenis after the component mounts
+  //   const lenis = new Lenis({
+  //     smooth: true, // Enable smooth scrolling
+  //     lerp: 0.1, // The smooth scroll easing factor
+  //     infinite: false,
+  //   });
 
-    function raf(time) {
-      lenis.raf(time); // Update Lenis on each frame
-      requestAnimationFrame(raf); // Keep the animation loop running
-    }
+  //   function raf(time) {
+  //     lenis.raf(time); // Update Lenis on each frame
+  //     requestAnimationFrame(raf); // Keep the animation loop running
+  //   }
 
-    requestAnimationFrame(raf); // Start the animation loop
+  //   requestAnimationFrame(raf); // Start the animation loop
 
-    return () => {
-      // Clean up Lenis when the component unmounts
-      lenis.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     // Clean up Lenis when the component unmounts
+  //     lenis.destroy();
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    // Initialize Lenis after the component mounts
-    const lenis = new Lenis({
-      smooth: true, // Enable smooth scrolling
-      lerp: 0.1, // The smooth scroll easing factor
-      infinite: false,
-    });
+  // useEffect(() => {
+  //   // Initialize Lenis after the component mounts
+  //   const lenis = new Lenis({
+  //     smooth: true, // Enable smooth scrolling
+  //     lerp: 0.1, // The smooth scroll easing factor
+  //     infinite: false,
+  //   });
 
-    function raf(time) {
-      lenis.raf(time); // Update Lenis on each frame
-      requestAnimationFrame(raf); // Keep the animation loop running
-    }
+  //   function raf(time) {
+  //     lenis.raf(time); // Update Lenis on each frame
+  //     requestAnimationFrame(raf); // Keep the animation loop running
+  //   }
 
-    requestAnimationFrame(raf); // Start the animation loop
+  //   requestAnimationFrame(raf); // Start the animation loop
 
-    return () => {
-      // Clean up Lenis when the component unmounts
-      lenis.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     // Clean up Lenis when the component unmounts
+  //     lenis.destroy();
+  //   };
+  // }, []);
 
   return (
     <section className="services">
