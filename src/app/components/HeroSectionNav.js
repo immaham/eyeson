@@ -30,8 +30,13 @@ const HeroSectionNav = ({ route }) => {
             </p>
           </a>
         </div>
-        <div>
+        <div className="nav-motion-container">
           <p className="nav-motion">Motion Graphic</p>
+          <p className="nav-motion">VFX & Effects</p>
+          <p className="nav-motion">2D 3D Animations</p>
+          <p className="nav-motion">Social Media Content</p>
+          <p className="nav-motion">Video Editting</p>
+          <p className="nav-motion">Graphic Design</p>
         </div>
       </nav>
     </section>
