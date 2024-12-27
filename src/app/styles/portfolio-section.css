@@ -41,11 +41,23 @@
   height: 100%;
   object-fit: cover;
   border-radius: 1.5rem;
+  transition: all 0.4s linear;
+}
+@media (min-width: 680px) {
+  .portfolio-card-container:hover img {
+    transform: translateY(-1.1rem);
+    border-radius: 0.5rem;
+  }
+  .portfolio-card-container:hover .portfolio-card-description {
+    background-color: rgba(5, 57, 48, 0.569);
+    transform: scale(0.93);
+    border-radius: 0.5rem;
+  }
 }
 .portfolio-card-description {
   /* background-color: #05393024; */
   position: absolute;
-  left: -1rem;
+  left: -0.89rem;
   bottom: 0.75rem;
   width: 24.0625rem;
   height: 7.875rem;
@@ -54,6 +66,7 @@
   background-color: rgba(5, 57, 48, 0.323);
   backdrop-filter: blur(20.449999809265137px);
   padding: 1.38rem 1.25rem 1.5rem;
+  transition: all 0.4s linear;
 }
 .portfolio-card-description h1 {
   font-weight: 300;
@@ -97,6 +110,7 @@
   }
 
   .portfolio-card-description {
+    left: -0.7rem;
     width: 20.4rem;
     height: 6.7rem;
     padding: 1.13rem 1.23rem 1.13rem;
