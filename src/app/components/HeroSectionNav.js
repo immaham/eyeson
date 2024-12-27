@@ -17,15 +17,15 @@ const HeroSectionNav = ({ route }) => {
         <img src="../hero-light-7.svg" className="hero-light-7" />
         <div className="nav-links">
           <a href="/">
-            <p className={route === "/" && "nav-link-active"}>Home</p>
+            <p className={route === "/" ? "nav-link-active" : ""}>Home</p>
           </a>
           <a href="/services">
-            <p className={route === "/services" && "nav-link-active"}>
+            <p className={route === "/services" ? "nav-link-active" : ""}>
               Services
             </p>
           </a>
           <a href="/portfolio">
-            <p className={route === "/portfolio" && "nav-link-active"}>
+            <p className={route === "/portfolio" ? "nav-link-active" : ""}>
               Portfolio
             </p>
           </a>

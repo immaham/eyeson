@@ -1,10 +1,33 @@
-import React from "react";
+"use client";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Ideas = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const lightRef = useRef();
+
+  useEffect(() => {
+    {
+      gsap.from(lightRef.current, {
+        scrollTrigger: {
+          trigger: lightRef.current,
+          start: "bottom bottom",
+          end: "top 50%",
+          // toggleActions: "onEnter onLeave onEnterBack onLeaveBack",
+        },
+        // y: 100,
+        opacity: 0,
+        duration: 1.2,
+        ease: "steps(12)",
+      });
+    }
+  }, []);
+
   return (
     <section className="portfolio-ideas">
       <h1>Let’s Make Your Ideas Unforgettable</h1>
-      <img src="./ideas-background.png" className="background" />
+      <img ref={lightRef} src="./ideas-background.png" className="background" />
       <div className="cards">
         <div className="card">
           <img src="./portfolio-page-light1.svg" className="light" />
