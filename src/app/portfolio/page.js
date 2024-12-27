@@ -8,7 +8,7 @@ import Vision from "../components/Vision";
 const page = () => {
   return (
     <section className="portfolio-page-container">
-      <HeroSectionNav />
+      <HeroSectionNav route={"/portfolio"} />
       <Vision />
       <Creativity />
       <Ideas />

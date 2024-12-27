@@ -7,18 +7,16 @@ import HeroSectionCenter from "./components/HeroSectionCenter";
 import HeroSectionNav from "./components/HeroSectionNav";
 import KeyProject from "./components/KeyProject";
 import Mission from "./components/Mission";
-import MouseLight from "./components/MouseLight";
 import Portfolio from "./components/Portfolio";
 import Services from "./components/Services";
 
 export default function Home() {
   return (
     <div className="body-container">
-      <MouseLight />
       <main className="main">
         <secion>
           <section className="hero-section">
-            <HeroSectionNav />
+            <HeroSectionNav route={"/"} />
             <HeroSectionCenter />
             <HeroSectionBtn />
           </section>

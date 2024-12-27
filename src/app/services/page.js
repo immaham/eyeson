@@ -10,7 +10,7 @@ import ServicesOffer from "../components/ServicesOffer";
 const page = () => {
   return (
     <section className="services-page-container">
-      <HeroSectionNav />
+      <HeroSectionNav route={"/services"} />
       <ServicesOffer />
       <Design />
       <Gallery />

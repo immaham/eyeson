@@ -263,7 +263,7 @@ a {
   gap: 6rem;
   z-index: 2;
 }
-.nav-link-home {
+.nav-link-active {
   color: #66cdd8;
   font-weight: 700;
 }

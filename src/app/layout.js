@@ -10,6 +10,7 @@ import "./styles/footer.css";
 import "./styles/services-page.css";
 import "./styles/portfolio-page.css";
 import Footer from "./components/Footer";
+import MouseLight from "./components/MouseLight";
 
 export const metadata = {
   title: "Create Next App",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <MouseLight />
         {children}
         <Footer />
       </body>
