@@ -132,6 +132,10 @@
 }
 
 @media (max-width: 1300px) {
+  .eyes-on {
+    max-width: 35rem;
+    margin-inline: auto;
+  }
   .eyes-on h1:nth-of-type(1) {
     font-size: 1.5rem;
     letter-spacing: 0.25rem;

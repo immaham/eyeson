@@ -1,8 +1,8 @@
 .light {
   align-self: baseline;
   position: fixed;
-  width: 300px; /* Adjust size for the effect */
-  height: 300px;
+  width: 17.18rem; /* Adjust size for the effect */
+  height: 17.18rem;
   background: radial-gradient(
     circle,
     rgba(144, 255, 253, 0.227) 10%,
@@ -16,7 +16,7 @@
   border-radius: 50%; /* Makes the gradient circular */
   transform: translate(
     -50%,
-    -50%
+    -60%
   ); /* Centers the gradient around its position */
   z-index: 1; /* Ensures it stays on top of content */
   filter: blur(120px);

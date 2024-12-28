@@ -83,6 +83,10 @@
 }
 
 @media (max-width: 1300px) {
+  .portfolio {
+    max-width: 30rem;
+    margin-inline: auto;
+  }
   .portfolio-cards {
     display: flex;
     flex-wrap: wrap;
@@ -96,12 +100,13 @@
 }
 @media (max-width: 680px) {
   .portfolio-heading h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
   }
   .portfolio-heading {
     gap: 10rem;
     justify-content: center;
+    align-items: center;
   }
 
   .portfolio-card-container {
@@ -127,5 +132,9 @@
   }
   .portfolio-card-container:nth-of-type(3) {
     display: none;
+  }
+  .portfolio-heading img {
+    width: 2.25rem;
+    height: 2.25rem;
   }
 }

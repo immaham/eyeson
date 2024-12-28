@@ -23,6 +23,7 @@ const Benefits = () => {
       });
     }
   }, []);
+
   return (
     <section className="services-benefits">
       <h1>Our Benefits</h1>

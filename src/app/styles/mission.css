@@ -129,8 +129,9 @@
     width: 95%;
     text-align: left;
   }
+
   .mission-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   .mission-card-container p {
     font-weight: 500;

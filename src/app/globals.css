@@ -260,6 +260,7 @@ h1 {
 .hero-eye-down {
   transform: rotate(180deg);
 }
+
 .hero-btn {
   display: flex;
   width: 14rem;
@@ -271,8 +272,9 @@ h1 {
   flex-shrink: 0;
   border-radius: 2rem;
   border: 1px solid #eee8a9;
-  background: rgba(6, 24, 54, 0.7);
+  background: rgb(6, 24, 54);
   backdrop-filter: blur(6px);
+  outline: none;
 }
 
 .hero-btn-text {
@@ -346,7 +348,9 @@ h1 {
     max-width: 50rem;
   }
   .main {
-    max-width: 35rem;
+    max-width: 81.25rem;
+    position: relative;
+    overflow: hidden;
   }
   .hero-section {
     gap: 4rem;
@@ -398,9 +402,27 @@ h1 {
     gap: 0rem;
     height: 28rem;
   }
-  .nav-links,
+
   .nav-motion {
     display: none;
+  }
+  .nav-container {
+    max-width: 21rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-links {
+    margin-left: auto;
+    gap: 0.8rem;
+  }
+  .nav-links p {
+    font-size: 1rem;
+  }
+  .nav-motion-container {
+    display: none;
+  }
+  .nav-logo {
+    /* margin-right: auto; */
   }
   .hero-section-center {
     transform: scale(0.3);
@@ -411,13 +433,7 @@ h1 {
   .nav-logo p {
     font-size: 1rem;
   }
-  .nav-container {
-    display: block;
-    position: absolute;
-    left: 1rem;
-    width: 10rem;
-    align-self: baseline;
-  }
+
   .hero-light-center {
     /* display: none; */
     position: absolute;
