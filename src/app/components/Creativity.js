@@ -1,47 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import CritivityCard from "./CritivityCard";
-import ViewMoreBtn from "./ViewMoreBtn";
+import CreativityCard1 from "./CreativityCard1";
 import CreativityCard2 from "./CreativityCard2";
-
-const cardsData = [
-  {
-    tag: "content",
-    title: "Creative Content Production",
-    text: "Detailed information about our motion graphics and animation services, including examples and benefits.  Detailed information.",
-    img: "creativity1.jpeg",
-  },
-  {
-    tag: "content",
-    title: "Creative Content Production",
-    text: "Detailed information about our motion graphics and animation services, including examples and benefits.  Detailed information.",
-    img: "creativity2.jpeg",
-  },
-  {
-    tag: "content",
-    title: "Creative Content Production",
-    text: "Detailed information about our motion graphics and animation services, including examples and benefits.  Detailed information.",
-    img: "creativity3.jpeg",
-  },
-  {
-    tag: "content",
-    title: "Creative Content Production",
-    text: "Detailed information about our motion graphics and animation services, including examples and benefits.  Detailed information.",
-    img: "creativity4.jpeg",
-  },
-  {
-    tag: "content",
-    title: "Creative Content Production",
-    text: "Detailed information about our motion graphics and animation services, including examples and benefits.  Detailed information.",
-    img: "creativity5.jpeg",
-  },
-  {
-    tag: "content",
-    title: "Creative Content Production",
-    text: "Detailed information about our motion graphics and animation services, including examples and benefits.  Detailed information.",
-    img: "creativity6.jpeg",
-  },
-];
+import CreativityCard3 from "./CreativityCard3";
+import CreativityCard4 from "./CreativityCard4";
+import CreativityCard5 from "./CreativityCard5";
+import CreativityCard6 from "./CreativityCard6";
+import ViewMoreBtn from "./ViewMoreBtn";
 
 const Creativity = () => {
   const [activeBtn, SetActiveBtn] = useState(1);
@@ -91,23 +56,19 @@ const Creativity = () => {
       </div>
       <div className="cards-container">
         <div className="cards">
-          {activeBtn === 1 ||
-          activeBtn === 3 ||
-          activeBtn === 4 ||
-          activeBtn === 5 ||
-          activeBtn === 6 ? (
-            cardsData.map((card) => (
-              <CritivityCard
-                key={card.img}
-                tag={card.tag}
-                title={card.title}
-                text={card.text}
-                img={card.img}
-              />
-            ))
-          ) : (
+          {activeBtn === 1 ? (
+            <CreativityCard1 />
+          ) : activeBtn === 2 ? (
             <CreativityCard2 />
-          )}
+          ) : activeBtn === 3 ? (
+            <CreativityCard3 />
+          ) : activeBtn === 4 ? (
+            <CreativityCard4 />
+          ) : activeBtn === 5 ? (
+            <CreativityCard5 />
+          ) : activeBtn === 6 ? (
+            <CreativityCard6 />
+          ) : null}
         </div>
         <div className="btn-component3">
           <ViewMoreBtn text="View More" />

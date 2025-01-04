@@ -27,6 +27,9 @@
 }
 
 /* ------ PORTFOLIO VISION ------ */
+.portfolio-page-wrapper {
+  overflow: hidden;
+}
 
 .portfolio-page-container {
   max-width: 75.25rem;

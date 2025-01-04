@@ -7,14 +7,16 @@ import Vision from "../components/Vision";
 
 const page = () => {
   return (
-    <section className="portfolio-page-container">
-      <HeroSectionNav route={"/portfolio"} />
-      <Vision />
-      <Creativity />
-      <Ideas />
-      <KeyProject />
-      <ContactSection />
-    </section>
+    <div className="portfolio-page-wrapper">
+      <section className="portfolio-page-container">
+        <HeroSectionNav route={"/portfolio"} />
+        <Vision />
+        <Creativity />
+        <Ideas />
+        <KeyProject />
+        <ContactSection />
+      </section>
+    </div>
   );
 };
 

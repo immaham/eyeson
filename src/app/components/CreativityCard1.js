@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
-const CreativityCard2 = () => {
+const CritivityCard = () => {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     async function fetchItems() {
       try {
         setIsLoading(true);
-        const response = await fetch("/api/creativity-graphic");
+        const response = await fetch("/api/creativity-motion");
         const data = await response.json();
         setItems(data);
         setIsLoading(false);
@@ -18,6 +18,7 @@ const CreativityCard2 = () => {
     }
     fetchItems();
   }, []);
+
   if (isLoading) {
     return (
       <div className="loading">
@@ -25,21 +26,23 @@ const CreativityCard2 = () => {
       </div>
     );
   }
+
   return (
-    <div className="cards2">
-      {items.map((item) => {
-        return (
-          <div className="card2" key={item._id}>
-            <img src={`./${item.image}`} />
-            <div className="overlay">
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
-            </div>
+    <>
+      {items.map((item) => (
+        <div className="card" key={item._id}>
+          <div className="content">
+            <p>{item.tag}</p>
+            <h1>{item.title}</h1>
+            <p>{item.description}</p>
           </div>
-        );
-      })}
-    </div>
+          <div>
+            <img src={`./${item.image}`} alt={item.title} />
+          </div>
+        </div>
+      ))}
+    </>
   );
 };
 
-export default CreativityCard2;
+export default CritivityCard;
