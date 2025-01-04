@@ -1,35 +1,21 @@
 "use client";
-import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Faqs = () => {
-  const items = [
-    {
-      header: "1) What is SEO, and why is it important?",
-      content:
-        "SEO is best described as Search Engine Optimization; it's the process of optimizing your website to rank higher in the search engine result pages, which will make the website more visible for prospective customers. That is important because with increased visibility comes increased traffic, which may further lead to more conversions and business growth.",
-    },
-    {
-      header: "1) What is SEO, and why is it important?",
-      content:
-        "SEO is best described as Search Engine Optimization; it's the process of optimizing your website to rank higher in the search engine result pages, which will make the website more visible for prospective customers. That is important because with increased visibility comes increased traffic, which may further lead to more conversions and business growth.",
-    },
-    {
-      header: "1) What is SEO, and why is it important?",
-      content:
-        "SEO is best described as Search Engine Optimization; it's the process of optimizing your website to rank higher in the search engine result pages, which will make the website more visible for prospective customers. That is important because with increased visibility comes increased traffic, which may further lead to more conversions and business growth.",
-    },
-    {
-      header: "1) What is SEO, and why is it important?",
-      content:
-        "SEO is best described as Search Engine Optimization; it's the process of optimizing your website to rank higher in the search engine result pages, which will make the website more visible for prospective customers. That is important because with increased visibility comes increased traffic, which may further lead to more conversions and business growth.",
-    },
-    {
-      header: "1) What is SEO, and why is it important?",
-      content:
-        "SEO is best described as Search Engine Optimization; it's the process of optimizing your website to rank higher in the search engine result pages, which will make the website more visible for prospective customers. That is important because with increased visibility comes increased traffic, which may further lead to more conversions and business growth.",
-    },
-  ];
+  const [items, setItems] = useState([]);
+  useEffect(() => {
+    async function fetchFaqs() {
+      try {
+        const response = await fetch("/api/faqs");
+        const data = await response.json();
+        setItems(data);
+      } catch (error) {
+        console.error("Error fetching cards:", error);
+      }
+    }
+    fetchFaqs();
+  }, []);
+
   const [openIndexes, setOpenIndexes] = useState([]);
 
   const toggleVisibility = (index) => {
@@ -77,13 +63,13 @@ const Faqs = () => {
             className={`faqs-right-content ${
               !openIndexes.includes(index) && "close"
             }`}
-            key={index}
+            key={item._id}
           >
             <div
               onClick={() => toggleVisibility(index)}
               className="faqs-right-header"
             >
-              <h1>{item.header}</h1>
+              <h1>{item.title}</h1>
               {openIndexes.includes(index) ? (
                 <div className="svg-light">
                   <svg
@@ -149,7 +135,7 @@ const Faqs = () => {
                 openIndexes.includes(index) ? "open" : "closed"
               }`}
             >
-              {item.content}
+              {item.description}
             </p>
           </div>
         ))}

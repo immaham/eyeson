@@ -1,32 +1,28 @@
 "use client";
-
-const cards = [
-  {
-    image: "card1.jpeg",
-    title: "Graphic Design",
-    description: "A brand 3d Design Characteristic for growth",
-  },
-  {
-    image: "card3.jpeg",
-    title: "Graphic Design",
-    description: "A brand 3d Design Characteristic for growth",
-  },
-  {
-    image: "card2.jpeg",
-    title: "Graphic Design",
-    description: "A brand 3d Design Characteristic for growth",
-  },
-];
+import React, { useEffect, useState } from "react";
 
 const PortfolioCard = () => {
+  const [cards, setCards] = useState([]);
+  useEffect(() => {
+    async function fetchCards() {
+      try {
+        const response = await fetch("/api/portfolio-home-card");
+        const data = await response.json();
+        setCards(data);
+      } catch (error) {
+        console.error("Error fetching cards:", error);
+      }
+    }
+    fetchCards();
+  }, []);
   return (
     <>
-      {cards.map((item, index) => (
-        <div key={index} className="portfolio-card-container">
+      {cards.map((item) => (
+        <div key={item._id} className="portfolio-card-container">
           <img src={`./${item.image}`} />
           <div className="portfolio-card-description">
-            <h1>Graphic Design</h1>
-            <p>A brand 3d Design Characteristic for growth</p>
+            <h1>{item.title}</h1>
+            <p>{item.description}</p>
           </div>
         </div>
       ))}

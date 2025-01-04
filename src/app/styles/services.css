@@ -81,6 +81,7 @@
   font-weight: 600;
   font-size: 1.25rem;
   font-family: "Barlow";
+  cursor: pointer;
 }
 .services-light-left,
 .services-light-right-1,
