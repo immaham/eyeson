@@ -3,6 +3,7 @@ import SplitType from "split-type";
 import ViewMoreBtn from "./../components/ViewMoreBtn";
 import { gsap } from "gsap";
 import { useEffect } from "react";
+import Link from "next/link";
 // import Lenis from "@studio-freight/lenis";
 
 const KeyProject = () => {
@@ -15,7 +16,7 @@ const KeyProject = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".key-projects",
-        start: "top 90%",
+        start: "top bottom",
         end: "bottom center",
         toggleActions: "play play reverse reverse",
       },
@@ -30,30 +31,9 @@ const KeyProject = () => {
     });
     return () => {
       // Cleanup on component unmount
-      split.revert();
+      splitText.revert();
     };
   }, []);
-
-  // useEffect(() => {
-  //   // Initialize Lenis after the component mounts
-  //   const lenis = new Lenis({
-  //     smooth: true, // Enable smooth scrolling
-  //     lerp: 0.1, // The smooth scroll easing factor
-  //     infinite: false,
-  //   });
-
-  //   function raf(time) {
-  //     lenis.raf(time); // Update Lenis on each frame
-  //     requestAnimationFrame(raf); // Keep the animation loop running
-  //   }
-
-  //   requestAnimationFrame(raf); // Start the animation loop
-
-  //   return () => {
-  //     // Clean up Lenis when the component unmounts
-  //     lenis.destroy();
-  //   };
-  // }, []);
 
   return (
     <section className="key-projects">
@@ -83,7 +63,9 @@ const KeyProject = () => {
           <div className="key-projects-project-mobile-label">
             <div>
               <p className="key-projects-project-mobile-label-tag">3D Design</p>
-              <img src="./play-logo.svg" />
+              <Link href={"/case-study/brand-name2"}>
+                <img src="./play-logo.svg" />
+              </Link>
             </div>
             <h1>A brand 3d Design Characteristic for growth</h1>
             <p className="key-projects-project-mobile-label-text key-projects-motion">
@@ -96,7 +78,9 @@ const KeyProject = () => {
           <div className="key-projects-project-mobile-label">
             <div>
               <p className="key-projects-project-mobile-label-tag">3D Design</p>
-              <img src="./play-logo.svg" />
+              <Link href={"/case-study/brand-name"}>
+                <img src="./play-logo.svg" />
+              </Link>
             </div>
             <h1>A brand 3d Design Characteristic for growth</h1>
             <p className="key-projects-project-mobile-label-text key-projects-motion">
@@ -116,7 +100,7 @@ const KeyProject = () => {
               Detailed information about our motion graphics and animation
               services, including examples and benefits.
             </p>
-            <ViewMoreBtn text="View Project" />
+            <ViewMoreBtn text="View Project" linkto="/case-study/brand-name2" />
           </div>
         </div>
       </div>
@@ -129,7 +113,7 @@ const KeyProject = () => {
               Detailed information about our motion graphics and animation
               services, including examples and benefits.
             </p>
-            <ViewMoreBtn text="View Project" />
+            <ViewMoreBtn text="View Project" linkto="/case-study/brand-name" />
           </div>
         </div>
         <div className="key-projects-project-right-second"></div>

@@ -40,7 +40,7 @@ const Services = () => {
     );
     return () => {
       // Cleanup on component unmount
-      split.revert();
+      splitText.revert();
     };
   }, []);
 

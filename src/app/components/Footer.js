@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-container-left">
-          <img src="./eyeson-footer.svg" />
+          <img src="./../eyeson-footer.svg" />
           <div className="footer-container-left-text">
             <h1>Exelence In Every Detail</h1>
             <p>
@@ -28,9 +28,9 @@ const Footer = () => {
             </a>
           </div>
           <div className="footer-contact-logos">
-            <img src="./twitter-logo.svg" />
-            <img src="./instagram-logo.svg" />
-            <img src="./linkedin-logo.svg" />
+            <img src="./../twitter-logo.svg" />
+            <img src="./../instagram-logo.svg" />
+            <img src="./../linkedin-logo.svg" />
           </div>
         </div>
       </div>

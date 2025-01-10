@@ -1,7 +1,6 @@
 "use client";
 
 const HeroSectionNav = ({ route }) => {
-  console.log(route);
   return (
     <section className="nav">
       <nav className="nav-container">

@@ -1,11 +1,15 @@
 "use client";
 
+import Link from "next/link";
+
 const ViewMoreBtn = (props) => {
   return (
-    <button className="btn-component">
-      {props.text}
-      <img src="./frame-803.svg" />
-    </button>
+    <Link href={props.linkto || "#"}>
+      <button className="btn-component">
+        {props.text}
+        <img src="./../frame-803.svg" />
+      </button>
+    </Link>
   );
 };
 
