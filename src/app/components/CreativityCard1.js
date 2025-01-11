@@ -58,15 +58,15 @@ const CritivityCard = () => {
     <>
       {selectedVideo && (
         <div className="video-overlay">
-          <button onClick={handleCloseOverlay} className="close-button">
-            Close
-          </button>
           <video
             ref={videoPlayerRef}
             className="video-js vjs-default-skin video-player"
           >
             <source src={selectedVideo} />
           </video>
+          <button onClick={handleCloseOverlay} className="close-button">
+            Close
+          </button>
         </div>
       )}
       {items.map((item) => (
