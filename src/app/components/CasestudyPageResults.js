@@ -1,6 +1,7 @@
 const CasestudyPageResults = ({ results }) => {
   return (
     <section className="casestudy-page-results">
+      <img src="../casestudy-light1.svg" className="casestudy-light4" />
       <h1>Results</h1>
       <div className="casestudy-page-results-initiation">
         {results.map((item) => (

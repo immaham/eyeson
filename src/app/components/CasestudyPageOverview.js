@@ -1,6 +1,8 @@
 const CasestudyPageOverview = ({ contentCreation, projectInitiation }) => {
   return (
     <section className="casestudy-page-overview">
+      <img src="../casestudy-light1.svg" className="casestudy-light1" />
+      <img src="../casestudy-light2.svg" className="casestudy-light2" />
       <h1>Overview</h1>
       <div className="casestudy-page-overview-initiation">
         <h2>Project Initiation</h2>

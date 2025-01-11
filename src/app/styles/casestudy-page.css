@@ -233,6 +233,35 @@
   margin-top: 0.5rem;
 }
 
+.casestudy-light1,
+.casestudy-light2,
+.casestudy-light3,
+.casestudy-light4 {
+  position: absolute;
+}
+.casestudy-light1 {
+  left: -8rem;
+  top: -11rem;
+  fill: rgba(113, 195, 208, 0.37);
+  filter: blur(113px);
+}
+.casestudy-light2 {
+  right: -4rem;
+  fill: rgba(113, 195, 208, 0.25);
+  filter: blur(113px);
+}
+.casestudy-light3 {
+  left: -6rem;
+  top: -10rem;
+  fill: rgba(113, 195, 208, 0.25);
+  filter: blur(113px);
+}
+.casestudy-light4 {
+  left: -2rem;
+  top: -10rem;
+  fill: rgba(113, 195, 208, 0.25);
+  filter: blur(113px);
+}
 /* ---------- CaseStudy Next ---------- */
 
 .casestudy-page-next {
