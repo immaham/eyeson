@@ -12,6 +12,7 @@ import "./styles/portfolio-page.css";
 import "./styles/casestudy-page.css";
 import Footer from "./components/Footer";
 import MouseLight from "./components/MouseLight";
+import "video.js/dist/video-js.css";
 
 export const metadata = {
   title: "Eyes On",
