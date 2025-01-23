@@ -1,13 +1,16 @@
 "use client";
 
+import Link from "next/link";
+
 const HeroSectionNav = ({ route }) => {
   return (
     <section className="nav">
       <nav className="nav-container">
-        <div className="nav-logo">
+        <Link href="/" className="nav-logo">
           <img src="../logo.png" />
-          <p>EysOn</p>
-        </div>
+          <p>EyesOn</p>
+        </Link>
+
         <img src="../hero-light-center.svg" className="hero-light-center" />
         <img src="../hero-light-3.svg" className="hero-light-3" />
         <img src="../hero-light-4.svg" className="hero-light-4" />

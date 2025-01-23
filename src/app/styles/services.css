@@ -82,6 +82,11 @@
   font-size: 1.25rem;
   font-family: "Barlow";
   cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.btn-component:hover {
+  background-color: #001720;
+  transform: translateY(0.1rem);
 }
 .services-light-left,
 .services-light-right-1,

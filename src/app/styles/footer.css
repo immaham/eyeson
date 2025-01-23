@@ -50,11 +50,27 @@
 .footer-contact-links {
   display: flex;
   gap: 2rem;
+  z-index: 2;
+}
+.footer-contact-links p {
+  transition: all 0.3s ease-out;
+}
+.footer-contact-links p:hover {
+  color: #f1edba;
 }
 .footer-contact-logos {
   display: flex;
   margin-top: 0.8rem;
   gap: 3rem;
+  z-index: 2;
+}
+.footer-contact-logo {
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+.footer-contact-logo:hover {
+  cursor: pointer;
+  transform: scale(1.15) rotate(-5deg);
 }
 
 @media (max-width: 1300px) {

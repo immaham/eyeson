@@ -108,6 +108,11 @@
   font-family: "Barlow";
   margin-top: 1rem;
   cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.form-btn:hover {
+  background-color: #001720;
+  transform: translateY(0.1rem);
 }
 
 .contact-backlight-left-1 {
@@ -162,6 +167,9 @@
 }
 
 @media (max-width: 1300px) {
+  .contact-form-section {
+    margin-bottom: 9rem;
+  }
   .form {
     display: flex;
     flex-direction: column;
@@ -187,6 +195,9 @@
   }
 }
 @media (max-width: 680px) {
+  .contact-form-section {
+    margin-bottom: 4.4rem;
+  }
   .form {
     display: flex;
     flex-direction: column;

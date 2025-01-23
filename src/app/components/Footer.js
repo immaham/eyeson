@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -17,20 +19,35 @@ const Footer = () => {
         <div className="footer-container-right">
           <h1>Links</h1>
           <div className="footer-contact-links">
-            <a href="#">
+            <a href="/">
               <p>Home Page</p>
             </a>
-            <a href="#">
+            <a href="/services">
               <p>Services</p>
             </a>
-            <a href="#">
+            <a href="/portfolio">
               <p>Portfolio</p>
             </a>
           </div>
           <div className="footer-contact-logos">
-            <img src="./../twitter-logo.svg" />
-            <img src="./../instagram-logo.svg" />
-            <img src="./../linkedin-logo.svg" />
+            <Link href="https://youtube.com/@eyeson.studio?si=s5wrK71iw3GPdXC5">
+              <img
+                src="./../twitter-logo.svg"
+                className="footer-contact-logo"
+              />
+            </Link>
+            <Link href="https://www.instagram.com/eyesonstudio?igsh=MWVzeGV1emk1aXdoeQ==">
+              <img
+                src="./../instagram-logo.svg"
+                className="footer-contact-logo"
+              />
+            </Link>
+            <Link href="https://www.linkedin.com/company/webilancer">
+              <img
+                src="./../linkedin-logo.svg"
+                className="footer-contact-logo"
+              />
+            </Link>
           </div>
         </div>
       </div>

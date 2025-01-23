@@ -111,6 +111,7 @@ a {
   transform: translateX(-53%);
   z-index: 2;
 }
+
 .hero-light-3 {
   position: absolute;
   height: 36rem;
@@ -169,6 +170,13 @@ a {
   display: flex;
   gap: 6rem;
   z-index: 2;
+}
+.nav-links p {
+  transition: all 0.3s ease-out;
+}
+.nav-links p:hover {
+  color: #f1edba;
+  transform: scale(1.05);
 }
 .nav-link-active {
   color: #66cdd8;
@@ -249,6 +257,9 @@ h1 {
   position: absolute;
   top: -2.5rem;
   right: 3.8rem;
+}
+.hero-eye-line-top {
+  z-index: 100000;
 }
 .hero-eye-circle-down {
   position: absolute;
@@ -415,6 +426,7 @@ h1 {
   .nav-links {
     margin-left: auto;
     gap: 0.8rem;
+    margin-right: 1rem;
   }
   .nav-links p {
     font-size: 1rem;
@@ -422,8 +434,8 @@ h1 {
   .nav-motion-container {
     display: none;
   }
-  .nav-logo {
-    /* margin-right: auto; */
+  .nav-logo p {
+    display: none;
   }
   .hero-section-center {
     transform: scale(0.3);

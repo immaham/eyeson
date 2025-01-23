@@ -7,8 +7,8 @@ const Portfolio = () => {
       <div className="portfolio-heading">
         <h1>Porfolio</h1>
         <div>
-          <img src="./arrow.svg" />
-          <img src="./arrow.svg" />
+          <img src="./arrow.svg" className="arrow" />
+          <img src="./arrow.svg" className="arrow" />
         </div>
       </div>
       <div className="portfolio-cards">

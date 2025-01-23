@@ -7,7 +7,7 @@ const HeroSectionCenter = () => {
       <img src="../hero-light-2.svg" className="hero-light-2" />
       <div className="hero-eye-top">
         <img src="../vector.svg" className="hero-eye-circle-top" />
-        <img src="../rectangle.png" />
+        <img src="../rectangle.png" className="hero-eye-line-top" />
       </div>
       <div className="hero-title">
         <h1>Excellence</h1>
